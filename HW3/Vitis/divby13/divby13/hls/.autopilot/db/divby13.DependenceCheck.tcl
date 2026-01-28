@@ -1,0 +1,7 @@
+
+
+set RtlHierarchyInfo {[
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST"},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.control_s_axi_U"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.srem_32ns_5ns_5_36_seq_1_U1"}]}
+set DependenceCheckSize 0

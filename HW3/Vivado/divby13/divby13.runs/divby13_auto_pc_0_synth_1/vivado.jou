@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sat Jan 24 18:45:02 2026
+# Process ID: 51940
+# Current directory: C:/FPGAHW/HW3/Vivado/divby13/divby13.runs/divby13_auto_pc_0_synth_1
+# Command line: vivado.exe -log divby13_auto_pc_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source divby13_auto_pc_0.tcl
+# Log file: C:/FPGAHW/HW3/Vivado/divby13/divby13.runs/divby13_auto_pc_0_synth_1/divby13_auto_pc_0.vds
+# Journal file: C:/FPGAHW/HW3/Vivado/divby13/divby13.runs/divby13_auto_pc_0_synth_1\vivado.jou
+# Running On        :icarus
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26100
+# Processor Detail  :Intel(R) Core(TM) Ultra 9 275HX
+# CPU Frequency     :3072 MHz
+# CPU Physical cores:24
+# CPU Logical cores :24
+# Host memory       :33673 MB
+# Swap memory       :9180 MB
+# Total Virtual     :42853 MB
+# Available Virtual :6372 MB
+#-----------------------------------------------------------
+source divby13_auto_pc_0.tcl -notrace

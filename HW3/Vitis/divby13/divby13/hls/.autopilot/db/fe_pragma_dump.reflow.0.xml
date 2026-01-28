@@ -1,0 +1,5 @@
+<pragmas>
+<pragma file="divby13.cpp" line="3" pragmaType="interface" parentfunction="divby13" mode="s_axilite" port="a" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="divby13.cpp" line="4" pragmaType="interface" parentfunction="divby13" mode="s_axilite" port="result" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="divby13.cpp" line="5" pragmaType="interface" parentfunction="divby13" mode="ap_ctrl_none" port="return" name=""/>
+</pragmas>
