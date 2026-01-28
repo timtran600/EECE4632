@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Wed Jan 21 15:17:30 2026
+# Process ID: 10220
+# Current directory: C:/Users/tran.timo/Documents/labs/adder/adder/hls/impl/ip
+# Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file: C:/Users/tran.timo/Documents/labs/adder/adder/hls/impl/ip/vivado.log
+# Journal file: C:/Users/tran.timo/Documents/labs/adder/adder/hls/impl/ip\vivado.jou
+# Running On        :WFXB07B250A246E
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26200
+# Processor Detail  :Intel(R) Core(TM) i7-10700 CPU @ 2.90GHz
+# CPU Frequency     :2904 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :34059 MB
+# Swap memory       :2147 MB
+# Total Virtual     :36207 MB
+# Available Virtual :23029 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=C:/Users/tran.timo/Documents/labs/adder/adder/hls/hls_data.json outdir=C:/Users/tran.timo/Documents/labs/adder/adder/hls/impl/ip srcdir=C:/Users/tran.timo/Documents/labs/adder/adder/hls sort_interfaces_ports=false
+INFO: Copied 1 ipmisc file(s) to C:/Users/tran.timo/Documents/labs/adder/adder/hls/impl/ip/misc
+INFO: Copied 2 verilog file(s) to C:/Users/tran.timo/Documents/labs/adder/adder/hls/impl/ip/hdl/verilog
+INFO: Copied 2 vhdl file(s) to C:/Users/tran.timo/Documents/labs/adder/adder/hls/impl/ip/hdl/vhdl
+INFO: Copied 10 swdriver file(s) to C:/Users/tran.timo/Documents/labs/adder/adder/hls/impl/ip/drivers
+WARNING: [Common 17-1496] Vivado tclapp support version doesn't have install/uninstall hooks. Please update support using ::tclapp::update_support command.
+WARNING: [Common 17-1496] Vivado tclapp support version doesn't have install/uninstall hooks. Please update support using ::tclapp::update_support command.
+WARNING: [Common 17-1496] Vivado tclapp support version doesn't have install/uninstall hooks. Please update support using ::tclapp::update_support command.
+WARNING: [Common 17-1496] Vivado tclapp support version doesn't have install/uninstall hooks. Please update support using ::tclapp::update_support command.
+WARNING: [Common 17-1496] Vivado tclapp support version doesn't have install/uninstall hooks. Please update support using ::tclapp::update_support command.
+ipx::create_core: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 650.977 ; gain = 193.500
+INFO: Import ports from HDL: C:/Users/tran.timo/Documents/labs/adder/adder/hls/impl/ip/hdl/vhdl/add.vhd (add)
+INFO: Add axi4lite interface s_axi_control
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst_n
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+INFO: Created IP C:/Users/tran.timo/Documents/labs/adder/adder/hls/impl/ip/component.xml
+INFO: Created IP archive C:/Users/tran.timo/Documents/labs/adder/adder/hls/impl/ip/xilinx_com_hls_add_1_0.zip
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 21 15:17:42 2026...

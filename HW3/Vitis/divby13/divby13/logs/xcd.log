@@ -1,0 +1,50 @@
+01/24/26 17:03:22: Running xcd server. This server was NOT built by gradle, but presumably rdi.
+01/24/26 17:03:22: Server was asked to start on port: '55990'
+01/24/26 17:03:22: Server is using token UUID: '8dcc7e16-027f-4d9d-b7e4-c4e1e636f362'
+01/24/26 17:03:22: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+01/24/26 17:03:22: Attempting to start server on port '55990'
+01/24/26 17:03:22: Running Dispatch Server
+01/24/26 17:03:22: Version 2.2.0
+01/24/26 17:03:24: Dispatch Server: Accepted socket connection from client
+01/24/26 17:03:24: Starting Socket connection
+01/24/26 17:03:24: EXCHANGE_TOKEN received, server token: 8dcc7e16-027f-4d9d-b7e4-c4e1e636f362, passed token: 8dcc7e16-027f-4d9d-b7e4-c4e1e636f362
+01/24/26 17:03:24: DISPATCH_HANDLER: Adding handler from function makeHandler in library librdi_system_diagram failed with exception: Could not dynamically load librdi_system_diagram.dll
+01/24/26 17:03:24: SESSION_MGR: creating session with session uuid: 'ac408600-2601-4155-b5be-302599a31d6d' and name 'v++_compile_divby13'
+01/24/26 17:03:24: KERNEL_SVC: creating session with uuid: 'ac408600-2601-4155-b5be-302599a31d6d' and name 'v++_compile_divby13'
+01/24/26 17:03:24: GUIDANCE_SMGR: creating guidance session with uuid: 'ac408600-2601-4155-b5be-302599a31d6d' and name 'v++_compile_divby13'
+01/24/26 17:03:27: Dispatch Server: Accepted socket connection from client
+01/24/26 17:03:27: Starting Socket connection
+01/24/26 17:03:41: SESSION_MGR: closing session for UUID 'ac408600-2601-4155-b5be-302599a31d6d' with name 'v++_compile_divby13'
+01/24/26 17:03:41: KERNEL_SVC: closing session for UUID 'ac408600-2601-4155-b5be-302599a31d6d' with name 'v++_compile_divby13'
+01/24/26 17:03:41: GUIDANCE_SMGR: closing session for UUID 'ac408600-2601-4155-b5be-302599a31d6d' with name 'v++_compile_divby13'
+01/24/26 17:03:41: STOP_SERVER received, server token: 8dcc7e16-027f-4d9d-b7e4-c4e1e636f362, passed token: 8dcc7e16-027f-4d9d-b7e4-c4e1e636f362
+01/24/26 17:03:41: Socket received request to stop server.
+01/24/26 17:03:41: Dispatch Server: do_await_stop
+01/24/26 17:03:41: SERVER: destructor for server bound to port 55990
+01/24/26 17:03:41: Server exiting with status 0.
+01/24/26 17:03:41: Closing log file.
+01/24/26 17:04:01: Running xcd server. This server was NOT built by gradle, but presumably rdi.
+01/24/26 17:04:01: Server was asked to start on port: '56016'
+01/24/26 17:04:01: Server is using token UUID: 'a94fd049-a2cb-4bcb-b7e8-07f38f23718e'
+01/24/26 17:04:01: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+01/24/26 17:04:01: Attempting to start server on port '56016'
+01/24/26 17:04:01: Running Dispatch Server
+01/24/26 17:04:01: Version 2.2.0
+01/24/26 17:04:03: Dispatch Server: Accepted socket connection from client
+01/24/26 17:04:03: Starting Socket connection
+01/24/26 17:04:03: EXCHANGE_TOKEN received, server token: a94fd049-a2cb-4bcb-b7e8-07f38f23718e, passed token: a94fd049-a2cb-4bcb-b7e8-07f38f23718e
+01/24/26 17:04:03: DISPATCH_HANDLER: Adding handler from function makeHandler in library librdi_system_diagram failed with exception: Could not dynamically load librdi_system_diagram.dll
+01/24/26 17:04:03: SESSION_MGR: creating session with session uuid: '5d97de15-6067-43ea-819b-2bc6ebb6d591' and name 'vitis-run_compile_divby13'
+01/24/26 17:04:03: KERNEL_SVC: creating session with uuid: '5d97de15-6067-43ea-819b-2bc6ebb6d591' and name 'vitis-run_compile_divby13'
+01/24/26 17:04:03: GUIDANCE_SMGR: creating guidance session with uuid: '5d97de15-6067-43ea-819b-2bc6ebb6d591' and name 'vitis-run_compile_divby13'
+01/24/26 17:04:07: Dispatch Server: Accepted socket connection from client
+01/24/26 17:04:07: Starting Socket connection
+01/24/26 17:04:26: SESSION_MGR: closing session for UUID '5d97de15-6067-43ea-819b-2bc6ebb6d591' with name 'vitis-run_compile_divby13'
+01/24/26 17:04:26: KERNEL_SVC: closing session for UUID '5d97de15-6067-43ea-819b-2bc6ebb6d591' with name 'vitis-run_compile_divby13'
+01/24/26 17:04:26: GUIDANCE_SMGR: closing session for UUID '5d97de15-6067-43ea-819b-2bc6ebb6d591' with name 'vitis-run_compile_divby13'
+01/24/26 17:04:26: STOP_SERVER received, server token: a94fd049-a2cb-4bcb-b7e8-07f38f23718e, passed token: a94fd049-a2cb-4bcb-b7e8-07f38f23718e
+01/24/26 17:04:26: Socket received request to stop server.
+01/24/26 17:04:26: Dispatch Server: do_await_stop
+01/24/26 17:04:26: SERVER: destructor for server bound to port 56016
+01/24/26 17:04:26: Server exiting with status 0.
+01/24/26 17:04:26: Closing log file.

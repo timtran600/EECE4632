@@ -1,0 +1,14 @@
+[
+  {
+    "directory": "C:\\FPGAHW\\HW3\\Vitis\\divby13",
+    "arguments": [
+      "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\common\\technology\\autopilot",
+      "",
+      "-c",
+      "C:\\FPGAHW\\HW3\\Vitis\\divby13\\divby13.cpp"
+    ],
+    "file": "C:\\FPGAHW\\HW3\\Vitis\\divby13\\divby13.cpp"
+  }
+]
