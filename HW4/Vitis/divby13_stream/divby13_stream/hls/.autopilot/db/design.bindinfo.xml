@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op srem" ID="" IMPL="auto" LATENCY="35" OPTYPE="srem" PRAGMA="" RTLNAME="srem_32ns_5ns_5_36_1_U1" SOURCE="divby13_stream.cpp:16" VARIABLE="srem_ln16" MODULE="divby13_stream" LOOP="VITIS_LOOP_13_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op seteq" ID="" IMPL="auto" LATENCY="0" OPTYPE="seteq" PRAGMA="" RTLNAME="res_fu_116_p2" SOURCE="divby13_stream.cpp:16" VARIABLE="res" MODULE="divby13_stream" LOOP="VITIS_LOOP_13_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+	<BindNode BINDTYPE="adapter" DISPLAY="bind_adapter axilite" ID="" IMPL="" LATENCY="" OPTYPE="" PRAGMA="" RTLNAME="control_s_axi_U" SOURCE="" VARIABLE="" MODULE="divby13_stream" LOOP="" BUNDLEDNAME="control" DSP="0" BRAM="0" URAM="0" USAGE="interface" STORAGESUBTYPE="s_axilite" STORAGESIZE=""/>
+</BindInfo>

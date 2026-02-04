@@ -1,0 +1,30 @@
+C:\GitRepos\EECE4632\HW4\Vitis\divby13_stream\divby13_stream\hls\.autopilot\db\divby13_stream.pp.0.cpp:1313:7: warning: Added loop label VITIS_LOOP_1223_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1223_1: 
+C:\GitRepos\EECE4632\HW4\Vitis\divby13_stream\divby13_stream\hls\.autopilot\db\divby13_stream.pp.0.cpp:1313:7: note: FIX-IT applied suggested code changes
+C:\GitRepos\EECE4632\HW4\Vitis\divby13_stream\divby13_stream\hls\.autopilot\db\divby13_stream.pp.0.cpp:2287:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+C:\GitRepos\EECE4632\HW4\Vitis\divby13_stream\divby13_stream\hls\.autopilot\db\divby13_stream.pp.0.cpp:2287:5: note: FIX-IT applied suggested code changes
+C:\GitRepos\EECE4632\HW4\Vitis\divby13_stream\divby13_stream\hls\.autopilot\db\divby13_stream.pp.0.cpp:2301:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+C:\GitRepos\EECE4632\HW4\Vitis\divby13_stream\divby13_stream\hls\.autopilot\db\divby13_stream.pp.0.cpp:2301:5: note: FIX-IT applied suggested code changes
+C:\GitRepos\EECE4632\HW4\Vitis\divby13_stream\divby13_stream\hls\.autopilot\db\divby13_stream.pp.0.cpp:2315:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+C:\GitRepos\EECE4632\HW4\Vitis\divby13_stream\divby13_stream\hls\.autopilot\db\divby13_stream.pp.0.cpp:2315:5: note: FIX-IT applied suggested code changes
+C:\GitRepos\EECE4632\HW4\Vitis\divby13_stream\divby13_stream\hls\.autopilot\db\divby13_stream.pp.0.cpp:3944:7: warning: Added loop label VITIS_LOOP_1247_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1247_1: 
+C:\GitRepos\EECE4632\HW4\Vitis\divby13_stream\divby13_stream\hls\.autopilot\db\divby13_stream.pp.0.cpp:3944:7: note: FIX-IT applied suggested code changes
+C:\GitRepos\EECE4632\HW4\Vitis\divby13_stream\divby13_stream\hls\.autopilot\db\divby13_stream.pp.0.cpp:9768:5: warning: Added loop label VITIS_LOOP_13_1:   [xilinx-label-all-loops]
+    while(1)
+    ^~~~~
+    VITIS_LOOP_13_1: 
+C:\GitRepos\EECE4632\HW4\Vitis\divby13_stream\divby13_stream\hls\.autopilot\db\divby13_stream.pp.0.cpp:9768:5: note: FIX-IT applied suggested code changes

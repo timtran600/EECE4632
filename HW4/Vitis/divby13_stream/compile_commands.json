@@ -1,14 +1,14 @@
 [
   {
-    "directory": "C:\\Users\\tran.timo\\Documents\\Vitis\\divby13_stream",
+    "directory": "C:\\GitRepos\\EECE4632\\HW4\\Vitis\\divby13_stream",
     "arguments": [
       "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
-      "-fhls-tb",
-      "-hls-sim-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\include",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\common\\technology\\autopilot",
       "",
       "-c",
-      "C:\\Users\\tran.timo\\Documents\\Vitis\\divby13_stream\\divby13_stream.cpp"
+      "C:\\GitRepos\\EECE4632\\HW4\\Vitis\\divby13_stream\\divby13_stream.cpp"
     ],
-    "file": "C:\\Users\\tran.timo\\Documents\\Vitis\\divby13_stream\\divby13_stream.cpp"
+    "file": "C:\\GitRepos\\EECE4632\\HW4\\Vitis\\divby13_stream\\divby13_stream.cpp"
   }
 ]

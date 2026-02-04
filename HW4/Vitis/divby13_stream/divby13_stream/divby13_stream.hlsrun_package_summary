@@ -1,0 +1,161 @@
+<ENTRY>
+{
+ "thisFile": "C:/GitRepos\\EECE4632\\HW4\\Vitis\\divby13_stream\\divby13_stream\\divby13_stream.hlsrun_package_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "02/04/26 02:42:02",
+ "timestampMillis": "664396945",
+ "buildStep": {
+  "cmdId": "2e3d4e0c-9666-42bc-a53e-ba88b16fc6a5",
+  "name": "vitis-run",
+  "logFile": "C:/GitRepos\\EECE4632\\HW4\\Vitis\\divby13_stream\\divby13_stream\\logs\\divby13_stream.steps.log",
+  "commandLine": "C:/Xilinx/Vitis/2024.1/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --package --config C:\\GitRepos\\EECE4632\\HW4\\Vitis\\divby13_stream\\divby13_stream.cfg --work_dir divby13_stream ",
+  "args": [
+   "--mode",
+   "hls",
+   "--package",
+   "--config",
+   "C:\\GitRepos\\EECE4632\\HW4\\Vitis\\divby13_stream\\divby13_stream.cfg",
+   "--work_dir",
+   "divby13_stream"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\GitRepos\\EECE4632\\HW4\\Vitis\\divby13_stream"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/04/26 02:42:02",
+ "timestampMillis": "664396945",
+ "status": {
+  "cmdId": "2e3d4e0c-9666-42bc-a53e-ba88b16fc6a5",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "02/04/26 02:42:06",
+ "timestampMillis": "664400815",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IP",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "divby13_stream",
+     "file": "C:/GitRepos\\EECE4632\\HW4\\Vitis\\divby13_stream\\divby13_stream\\divby13_stream.zip",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/GitRepos\\EECE4632\\HW4\\Vitis\\divby13_stream\\divby13_stream",
+     "C:/GitRepos\\EECE4632\\HW4\\Vitis\\divby13_stream\\divby13_streamcpp",
+     "C:/GitRepos\\EECE4632\\HW4\\Vitis\\divby13_stream\\divby13_stream.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "02/04/26 02:42:06",
+ "timestampMillis": "664400817",
+ "buildStep": {
+  "cmdId": "ad2159d2-dfdb-4d34-ba6e-dc1d6f986387",
+  "name": "export_design",
+  "logFile": "C:/GitRepos\\EECE4632\\HW4\\Vitis\\divby13_stream\\divby13_stream\\hls\\hls.log",
+  "commandLine": "export_design -flow none",
+  "args": [
+   "-flow",
+   "none"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\GitRepos\\EECE4632\\HW4\\Vitis\\divby13_stream"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/04/26 02:42:06",
+ "timestampMillis": "664400818",
+ "status": {
+  "cmdId": "ad2159d2-dfdb-4d34-ba6e-dc1d6f986387",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/04/26 02:42:18",
+ "timestampMillis": "664412905",
+ "status": {
+  "cmdId": "ad2159d2-dfdb-4d34-ba6e-dc1d6f986387",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/04/26 02:42:19",
+ "timestampMillis": "664413084",
+ "status": {
+  "cmdId": "2e3d4e0c-9666-42bc-a53e-ba88b16fc6a5",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/04/26 02:42:19",
+ "timestampMillis": "664413085",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/04/26 02:42:19",
+ "timestampMillis": "664413085",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

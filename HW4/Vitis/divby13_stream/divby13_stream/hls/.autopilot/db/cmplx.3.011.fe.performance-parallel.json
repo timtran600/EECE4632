@@ -1,0 +1,17 @@
+{
+  "0": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "divby13_stream.cpp",
+    "fileloc": 4,
+    "instructions": 104,
+    "loads": {
+      "L": 12
+    },
+    "name": "divby13_stream",
+    "stores": {
+      "L": 12
+    },
+    "total_instructions": 132
+  }
+}

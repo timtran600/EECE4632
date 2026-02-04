@@ -1,0 +1,29 @@
+INFO: [v++ 60-1548] Creating build summary session with primary output C:/GitRepos/EECE4632/HW4/Vitis/divby13_stream/divby13_stream\divby13_stream.hlscompile_summary, at 02/04/26 01:37:24
+INFO: [v++ 82-31] Launching vitis_hls: vitis_hls -nolog -run csynth -work_dir C:/GitRepos/EECE4632/HW4/Vitis/divby13_stream/divby13_stream -config C:/GitRepos/EECE4632/HW4/Vitis/divby13_stream/divby13_stream.cfg -cmdlineconfig C:/GitRepos/EECE4632/HW4/Vitis/divby13_stream/divby13_stream/hls/config.cmdline
+INFO: [HLS 200-10] For user 'theec' on host 'icarus' (Windows NT_amd64 version 10.0) on Wed Feb 04 01:37:26 -0500 2026
+INFO: [HLS 200-10] In directory 'C:/GitRepos/EECE4632/HW4/Vitis/divby13_stream'
+INFO: [HLS 200-2005] Using work_dir C:/GitRepos/EECE4632/HW4/Vitis/divby13_stream/divby13_stream 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+WARNING: [HLS 200-2001] file not found 'divby13_streamcpp' see [hls] from C:/GitRepos/EECE4632/HW4/Vitis/divby13_stream/divby13_stream.cfg(8)
+INFO: [HLS 200-1465] Applying ini 'syn.file=divby13_stream' from C:/GitRepos/EECE4632/HW4/Vitis/divby13_stream/divby13_stream.cfg(7)
+INFO: [HLS 200-10] Adding design file 'C:/GitRepos/EECE4632/HW4/Vitis/divby13_stream/divby13_stream' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=divby13_streamcpp' from C:/GitRepos/EECE4632/HW4/Vitis/divby13_stream/divby13_stream.cfg(8)
+WARNING: [HLS 200-40] Cannot find design file 'divby13_streamcpp'
+INFO: [HLS 200-1465] Applying ini 'tb.file=divby13_stream.cpp' from C:/GitRepos/EECE4632/HW4/Vitis/divby13_stream/divby13_stream.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'C:/GitRepos/EECE4632/HW4/Vitis/divby13_stream/divby13_stream.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=divby13_stream' from C:/GitRepos/EECE4632/HW4/Vitis/divby13_stream/divby13_stream.cfg(10)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/GitRepos/EECE4632/HW4/Vitis/divby13_stream/divby13_stream.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xczu3eg-sfvc784-2-e' from C:/GitRepos/EECE4632/HW4/Vitis/divby13_stream/divby13_stream.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-2-e'
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/GitRepos/EECE4632/HW4/Vitis/divby13_stream/divby13_stream.cfg(5)
+WARNING: [HLS 200-40] Cannot find source file divby13_streamcpp; skipping it.
+WARNING: [HLS 200-40] Cannot find source file divby13_stream; skipping it.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 2.384 seconds; current allocated memory: 230.555 MB.
+WARNING: [HLS 200-1986] Could not apply TOP directive, invalid function, label, or variable (:0)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.042 seconds; current allocated memory: 230.867 MB.
+ERROR: [HLS 200-70] Cannot find any design unit to elaborate.
+ERROR: Error in linking the design.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 2.457 seconds; peak allocated memory: 231.047 MB.

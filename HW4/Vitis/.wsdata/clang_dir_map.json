@@ -1,6 +1,8 @@
 {
-  "workspaceRoot": "C:\\Users\\tran.timo\\Documents\\Vitis",
+  "workspaceRoot": "C:\\GitRepos\\EECE4632\\HW4\\Vitis",
   "mapping": {
-    "divby13_stream\\divby13_stream.cpp": "divby13_stream"
+    "divby13_stream\\divby13_stream": "divby13_stream",
+    "divby13_stream\\divby13_stream.cpp": "divby13_stream",
+    "divby13_stream\\divby13_streamcpp": "divby13_stream"
   }
 }
