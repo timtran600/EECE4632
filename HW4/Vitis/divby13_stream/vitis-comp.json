@@ -1,0 +1,11 @@
+{
+  "name": "divby13_stream",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "divby13_stream.cfg"
+    ],
+    "work_dir": "divby13_stream"
+  }
+}

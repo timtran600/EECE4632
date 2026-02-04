@@ -1,0 +1,7 @@
+{
+  "workspaceRoot": "C:\\GitRepos\\EECE4632\\Lab4",
+  "mapping": {
+    "dct_ref\\dct_test.cpp": "dct",
+    "dct_ref\\dct.cpp": "dct"
+  }
+}

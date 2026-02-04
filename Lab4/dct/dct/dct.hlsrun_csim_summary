@@ -1,0 +1,156 @@
+<ENTRY>
+{
+ "thisFile": "C:/GitRepos\\EECE4632\\Lab4\\dct\\dct\\dct.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "01/29/26 19:41:24",
+ "timestampMillis": "207158940",
+ "buildStep": {
+  "cmdId": "9a34f5a5-3084-4b91-a2bf-94249051f560",
+  "name": "vitis-run",
+  "logFile": "C:/GitRepos\\EECE4632\\Lab4\\dct\\dct\\logs\\dct.steps.log",
+  "commandLine": "C:/Xilinx/Vitis/2024.1/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\GitRepos\\EECE4632\\Lab4\\dct\\hls_config.cfg --work_dir dct ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "C:\\GitRepos\\EECE4632\\Lab4\\dct\\hls_config.cfg",
+   "--work_dir",
+   "dct"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\GitRepos\\EECE4632\\Lab4\\dct"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "01/29/26 19:41:24",
+ "timestampMillis": "207158940",
+ "status": {
+  "cmdId": "9a34f5a5-3084-4b91-a2bf-94249051f560",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "01/29/26 19:41:28",
+ "timestampMillis": "207162107",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "dct",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/GitRepos\\EECE4632\\Lab4\\dct_ref\\dct.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "01/29/26 19:41:28",
+ "timestampMillis": "207162108",
+ "buildStep": {
+  "cmdId": "c1821146-03f3-48d2-9766-bd424b4a6570",
+  "name": "csim_design",
+  "logFile": "C:/GitRepos\\EECE4632\\Lab4\\dct\\dct\\hls\\hls.log",
+  "commandLine": "csim_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\GitRepos\\EECE4632\\Lab4\\dct"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "01/29/26 19:41:28",
+ "timestampMillis": "207162109",
+ "status": {
+  "cmdId": "c1821146-03f3-48d2-9766-bd424b4a6570",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "01/29/26 19:41:37",
+ "timestampMillis": "207171458",
+ "status": {
+  "cmdId": "c1821146-03f3-48d2-9766-bd424b4a6570",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "01/29/26 19:41:37",
+ "timestampMillis": "207171583",
+ "status": {
+  "cmdId": "9a34f5a5-3084-4b91-a2bf-94249051f560",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "01/29/26 19:41:37",
+ "timestampMillis": "207171584",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "01/29/26 19:41:37",
+ "timestampMillis": "207171584",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

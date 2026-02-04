@@ -1,0 +1,14 @@
+[
+  {
+    "directory": "C:\\Users\\tran.timo\\Documents\\Vitis\\divby13_stream",
+    "arguments": [
+      "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\include",
+      "",
+      "-c",
+      "C:\\Users\\tran.timo\\Documents\\Vitis\\divby13_stream\\divby13_stream.cpp"
+    ],
+    "file": "C:\\Users\\tran.timo\\Documents\\Vitis\\divby13_stream\\divby13_stream.cpp"
+  }
+]

@@ -1,0 +1,922 @@
+INFO-FLOW: Workspace C:/GitRepos/EECE4632/Lab4/dct/dct/hls opened at Thu Jan 29 20:29:17 -0500 2026
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini C:/GitRepos/EECE4632/Lab4/dct/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/GitRepos/EECE4632/Lab4/dct_ref/dct.cpp' from C:/GitRepos/EECE4632/Lab4/dct/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/GitRepos/EECE4632/Lab4/dct_ref/dct.cpp' from C:/GitRepos/EECE4632/Lab4/dct/hls_config.cfg(8)
+Execute     add_files C:/GitRepos/EECE4632/Lab4/dct_ref/dct.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/GitRepos/EECE4632/Lab4/dct_ref/dct.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:/GitRepos/EECE4632/Lab4/dct_ref/dct_test.cpp' from C:/GitRepos/EECE4632/Lab4/dct/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/GitRepos/EECE4632/Lab4/dct_ref/dct_test.cpp' from C:/GitRepos/EECE4632/Lab4/dct/hls_config.cfg(9)
+Execute     add_files -tb C:/GitRepos/EECE4632/Lab4/dct_ref/dct_test.cpp 
+INFO: [HLS 200-10] Adding test bench file 'C:/GitRepos/EECE4632/Lab4/dct_ref/dct_test.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:/GitRepos/EECE4632/Lab4/dct_ref/in.dat' from C:/GitRepos/EECE4632/Lab4/dct/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/GitRepos/EECE4632/Lab4/dct_ref/in.dat' from C:/GitRepos/EECE4632/Lab4/dct/hls_config.cfg(10)
+Execute     add_files -tb C:/GitRepos/EECE4632/Lab4/dct_ref/in.dat 
+INFO: [HLS 200-10] Adding test bench file 'C:/GitRepos/EECE4632/Lab4/dct_ref/in.dat' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:/GitRepos/EECE4632/Lab4/dct_ref/out.golden.dat' from C:/GitRepos/EECE4632/Lab4/dct/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/GitRepos/EECE4632/Lab4/dct_ref/out.golden.dat' from C:/GitRepos/EECE4632/Lab4/dct/hls_config.cfg(11)
+Execute     add_files -tb C:/GitRepos/EECE4632/Lab4/dct_ref/out.golden.dat 
+INFO: [HLS 200-10] Adding test bench file 'C:/GitRepos/EECE4632/Lab4/dct_ref/out.golden.dat' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=dct' from C:/GitRepos/EECE4632/Lab4/dct/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=dct' from C:/GitRepos/EECE4632/Lab4/dct/hls_config.cfg(7)
+Execute     set_top dct 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vitis' from C:/GitRepos/EECE4632/Lab4/dct/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vitis' from C:/GitRepos/EECE4632/Lab4/dct/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vitis 
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+Execute     send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_interface -m_axi_latency=64 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+Execute     config_interface -m_axi_latency=64 
+Execute     send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_interface -m_axi_alignment_byte_size=64 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+Execute     config_interface -m_axi_alignment_byte_size=64 
+Execute     send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_interface -m_axi_max_widen_bitwidth=512 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+Execute     config_interface -m_axi_max_widen_bitwidth=512 
+INFO-FLOW: Setting macro_cmd open_solution -flow_target vitis configuration: config_interface -default_interface=kernel
+Execute     config_interface -default_interface=kernel 
+Execute     send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_rtl -register_reset_num=3 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+Execute     config_rtl -register_reset_num=3 
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xczu3eg-sfvc784-2-e' from C:/GitRepos/EECE4632/Lab4/dct/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xczu3eg-sfvc784-2-e' from C:/GitRepos/EECE4632/Lab4/dct/hls_config.cfg(1)
+Execute     set_part xczu3eg-sfvc784-2-e 
+Execute       create_platform xczu3eg-sfvc784-2-e -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xczu3eg-sfvc784-2-e'
+Command       create_platform done; 1.163 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xczu3eg-sfvc784-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.244 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=8ns' from C:/GitRepos/EECE4632/Lab4/dct/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying ini 'clock=8ns' from C:/GitRepos/EECE4632/Lab4/dct/hls_config.cfg(12)
+Execute     create_clock -period 8ns 
+Execute       ap_set_clock -name default -period 8 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 8ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock_uncertainty=12%' from C:/GitRepos/EECE4632/Lab4/dct/hls_config.cfg(13) 
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=12%' from C:/GitRepos/EECE4632/Lab4/dct/hls_config.cfg(13)
+Execute     set_clock_uncertainty 12% 
+Execute       ap_set_clock -name default -uncertainty 0.96 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.96ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'csim.code_analyzer=1' from C:/GitRepos/EECE4632/Lab4/dct/hls_config.cfg(14) 
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from C:/GitRepos/EECE4632/Lab4/dct/hls_config.cfg(14)
+Execute     config_csim -code_analyzer=1 
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=xo' from C:/GitRepos/EECE4632/Lab4/dct/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=xo' from C:/GitRepos/EECE4632/Lab4/dct/hls_config.cfg(5)
+Execute     config_export -format=xo 
+Command   apply_ini done; 1.296 sec.
+Execute   apply_ini C:/GitRepos/EECE4632/Lab4/dct/dct/hls/config.cmdline 
+Execute   csynth_design 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+INFO-FLOW: Running SLX 'csynth' proc: ::SLX::run_csynth
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 2.04 seconds; current allocated memory: 230.586 MB.
+Execute       set_directive_top dct -name=dct 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+INFO: [HLS 200-10] Analyzing design file '../dct_ref/dct.cpp' ... 
+INFO-FLOW: Compiling one TU...
+INFO-FLOW: Handling ../dct_ref/dct.cpp as C++
+Execute       ap_part_info -name xczu3eg-sfvc784-2-e -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+INFO-FLOW: run_clang exec: C:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/clang ../dct_ref/dct.cpp -foptimization-record-file=C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info --sysroot C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt -fhls -fno-exceptions -insert-hls-directive=C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/all.directive.json -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=8 -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-mingw32 -fno-threadsafe-statics -fno-use-cxa-atexit -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot -I C:/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -I /usr/include/x86_64-linux-gnu -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.pp.0.cpp {-hls-platform-db-name=C:/Xilinx\Vitis_HLS\2024.1\common/technology\xilinx/common/platform.db} -hls-platform-name=zynquplus_medium -device-resource-info=BRAM_432.000000_DSP_360.000000_FF_141120.000000_LUT_70560.000000_SLICE_8820.000000_URAM_0.000000 -device-name-info=xczu3eg-sfvc784-2-e > C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.cpp.clang.out.log 2> C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.cpp.clang.err.log
+INFO-FLOW: Done: GCC PP 39 time: 0.3 seconds per iteration
+INFO-FLOW: Source syntax check for synthesis
+INFO-FLOW: run_clang exec: C:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.pp.0.cpp {-hls-platform-db-name=C:/Xilinx\Vitis_HLS\2024.1\common/technology\xilinx/common/platform.db} -hls-platform-name=zynquplus_medium -device-resource-info=BRAM_432.000000_DSP_360.000000_FF_141120.000000_LUT_70560.000000_SLICE_8820.000000_URAM_0.000000 -device-name-info=xczu3eg-sfvc784-2-e > C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/clang.out.log 2> C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/clang.err.log
+Execute       clang_tidy xilinx-systemc-detector -desc systemc-detector C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.pp.0.cpp std=gnu++14 -target fpga  -directive=C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/.systemc_flag -fix-errors C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.147 sec.
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute       clang_tidy xilinx-directive2pragma -desc directive2pragma C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.pp.0.cpp std=gnu++14 -target fpga  -directive=C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/all.directive.json 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/all.directive.json -fix-errors C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.305 sec.
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0.3 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
+Execute       clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.pp.0.cpp std=gnu++14 -target fpga  
+INFO-FLOW: run_clang exec: C:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.pp.0.cpp.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.pp.0.cpp.clang-tidy.loop-label.out.log 2> C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.pp.0.cpp.clang-tidy.loop-label.err.log
+Command       clang_tidy done; 0.199 sec.
+INFO-FLOW: run_clang exec: C:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.pp.0.cpp.xilinx-dataflow-lawyer.diag.yml C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.pp.0.cpp.xilinx-dataflow-lawyer.out.log 2> C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.pp.0.cpp.xilinx-dataflow-lawyer.err.log
+Execute       ap_part_info -name xczu3eg-sfvc784-2-e -data info 
+INFO-FLOW: compiling source code to llvm bc
+INFO-FLOW: run_clang exec: C:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.pp.0.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing -hls-emit-hint-scope C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=8 -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot -I C:/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.bc {-hls-platform-db-name=C:/Xilinx\Vitis_HLS\2024.1\common/technology\xilinx/common/platform.db} -hls-platform-name=zynquplus_medium -device-resource-info=BRAM_432.000000_DSP_360.000000_FF_141120.000000_LUT_70560.000000_SLICE_8820.000000_URAM_0.000000 -device-name-info=xczu3eg-sfvc784-2-e > C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.pp.0.cpp.clang.out.log 2> C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.pp.0.cpp.clang.err.log
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.878 seconds; current allocated memory: 232.738 MB.
+INFO-FLOW: Linking Debug ...
+INFO-FLOW: Linking dut bc code.
+Execute       run_link_or_opt -out C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.ld.0.bc -args  "C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.g.bc"  
+INFO-FLOW: run_clang exec: C:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/llvm-link C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.g.bc -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.ld.0.bc > C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.ld.0.bc.llvm-link.out.log 2> C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.ld.0.bc.llvm-link.err.log
+INFO-FLOW: 
+Execute       run_link_or_opt -opt -out C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.ld.1.lower.bc -args C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
+INFO-FLOW: run_clang exec: C:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.ld.1.lower.bc.opt.diag.yml C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.ld.1.lower.bc > C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.ld.1.lower.bc.opt.out.log 2> C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.ld.1.lower.bc.opt.err.log
+INFO-FLOW: 
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+INFO-FLOW: Linking math bc lib
+Execute       run_link_or_opt -out C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.ld.2.m1.bc -args C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/Xilinx/Vitis_HLS/2024.1/win64/lib/libhlsm_39.bc C:/Xilinx/Vitis_HLS/2024.1/win64/lib/libhlsmc++_39.bc 
+INFO-FLOW: run_clang exec: C:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/llvm-link C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/Xilinx/Vitis_HLS/2024.1/win64/lib/libhlsm_39.bc C:/Xilinx/Vitis_HLS/2024.1/win64/lib/libhlsmc++_39.bc -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.ld.2.m1.bc > C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.out.log 2> C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.err.log
+INFO-FLOW: 
+Command       run_link_or_opt done; 1.141 sec.
+Execute       run_link_or_opt -opt -out C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.ld.3.fpc.bc -args C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=dct -reflow-float-conversion 
+INFO-FLOW: run_clang exec: C:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.diag.yml C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=dct -reflow-float-conversion -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.ld.3.fpc.bc > C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.out.log 2> C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.err.log
+INFO-FLOW: 
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+Command       run_link_or_opt done; 0.514 sec.
+Execute       run_link_or_opt -out C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.ld.4.m2.bc -args C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/Xilinx/Vitis_HLS/2024.1/win64/lib/libfloatconversion_39.bc 
+INFO-FLOW: run_clang exec: C:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/llvm-link C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/Xilinx/Vitis_HLS/2024.1/win64/lib/libfloatconversion_39.bc -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.ld.4.m2.bc > C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.out.log 2> C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.err.log
+INFO-FLOW: 
+Execute       run_link_or_opt -opt -out C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.ld.5.gdce.bc -args C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=dct 
+INFO-FLOW: run_clang exec: C:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.ld.5.gdce.bc.opt.diag.yml C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=dct -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.ld.5.gdce.bc > C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.ld.5.gdce.bc.opt.out.log 2> C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.ld.5.gdce.bc.opt.err.log
+INFO-FLOW: 
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+Execute       send_msg_by_id INFO @200-777@%s Vitis 
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
+Execute       is_m_axi_addr64 
+INFO-FLOW: Doing LTO.
+INFO-FLOW: run_clang (background poll_ms 5000) exec: C:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.ld.0.bc.clang.reflow.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=dct -mllvm -hls-db-dir -mllvm C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/../../kernel.xml -mllvm -top-io-mapping-info=C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=true -mllvm -default-maxi-offset=slave -mllvm -maxi-latency=64 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=512 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -reflow-basic-block-instr-threshold=200000 -mllvm -reflow-auto-pipeline-threshold=64 -mllvm -reflow-enable-maxi-auto-id-channel=0 -mllvm -enable-fp-thr=0 -mllvm -reflow-bdd-simplify-threshold=1048576 -mllvm -reflow-fanout-threshold=16 -mllvm -reflow-complete-threshold=4 -mllvm -reflow-array-promotion-threshold=64 -mllvm -assume-maxi-align=64 -mllvm -reflow-enable-dataflow-strict-mode-checking=1 -ftime-report -mllvm -time-passes -mllvm -reflow-auto-array-partition-mode=default -mllvm -reflow-enable-auto-small-array-partition=true -mllvm -reflow-enable-auto-array-partition-for-flatten=true -mllvm -reflow-enable-auto-parallel-performance-driven=true -mllvm -reflow-enable-partition-for-automation=true -mllvm -reflow-aggregate-bitwidth-threshold=4096 -mllvm -reflow-reserved-saxilite-registers=0 -mllvm -enable-reflow-auto-loop-pipeline -mllvm -reflow-max-unroll-threshold=409600 -mllvm -auto-unroll-tripcount-threshold=0 -mllvm -reflow-assume-no-address-wrap=true -mllvm -reflow-enable-occurrence-inference=true -mllvm -reflow-emit-hint-scope=true -mllvm -reflow-enable-codegen-with-if=true -mllvm -hls -mllvm -disable-inlined-alloca-merging=true -mllvm -enable-reflow-vitis-flow-setting=true -mllvm -default-clock-period=8 -mllvm -use_read_first_ram_in_loop=1 -mllvm -default-clock-uncertainty=0.96 -x ir C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.ld.5.gdce.bc -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.lto.bc {-hls-platform-db-name=C:/Xilinx\Vitis_HLS\2024.1\common/technology\xilinx/common/platform.db} -hls-platform-name=zynquplus_medium -device-resource-info=BRAM_432.000000_DSP_360.000000_FF_141120.000000_LUT_70560.000000_SLICE_8820.000000_URAM_0.000000 -device-name-info=xczu3eg-sfvc784-2-e 2> C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.ld.0.bc.clang.reflow.err.log bg_poll_cmd: ::AP::poll_clang_39_closed_source
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 242 Compile/Link C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 242 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 6,304 Unroll/Inline (step 1) C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 6,304 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 3,452 Unroll/Inline (step 2) C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 3,452 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 3,450 Unroll/Inline (step 3) C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 3,450 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 3,450 Unroll/Inline (step 4) C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 3,450 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 3,506 Array/Struct (step 1) C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 3,506 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 3,506 Array/Struct (step 2) C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 3,506 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 3,506 Array/Struct (step 3) C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 3,506 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 3,506 Array/Struct (step 4) C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 3,506 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 3,539 Array/Struct (step 5) C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 3,539 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 3,537 Performance (step 1) C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 3,537 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 3,583 Performance (step 2) C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 3,583 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 7,378 Performance (step 3) C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 7,378 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 3,554 Performance (step 4) C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 3,554 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 3,554 HW Transforms (step 1) C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 3,554 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 3,559 HW Transforms (step 2) C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 3,559 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/csynth_design_size.rpt
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+INFO: [HLS 214-291] Loop 'Xpose_Col_Outer_Loop' is marked as complete unroll implied by the pipeline pragma (../dct_ref/dct.cpp:53:4)
+INFO: [HLS 214-291] Loop 'Xpose_Col_Inner_Loop' is marked as complete unroll implied by the pipeline pragma (../dct_ref/dct.cpp:55:7)
+INFO: [HLS 214-291] Loop 'Col_DCT_Loop' is marked as complete unroll implied by the pipeline pragma (../dct_ref/dct.cpp:48:4)
+INFO: [HLS 214-291] Loop 'Xpose_Row_Outer_Loop' is marked as complete unroll implied by the pipeline pragma (../dct_ref/dct.cpp:42:4)
+INFO: [HLS 214-291] Loop 'Xpose_Row_Inner_Loop' is marked as complete unroll implied by the pipeline pragma (../dct_ref/dct.cpp:44:7)
+INFO: [HLS 214-291] Loop 'Row_DCT_Loop' is marked as complete unroll implied by the pipeline pragma (../dct_ref/dct.cpp:37:4)
+INFO: [HLS 214-291] Loop 'DCT_Outer_Loop' is marked as complete unroll implied by the pipeline pragma (../dct_ref/dct.cpp:17:4)
+INFO: [HLS 214-291] Loop 'DCT_Inner_Loop' is marked as complete unroll implied by the pipeline pragma (../dct_ref/dct.cpp:19:7)
+INFO: [HLS 214-186] Unrolling loop 'Xpose_Col_Outer_Loop' (../dct_ref/dct.cpp:53:4) in function 'dct_2d' completely with a factor of 8 (../dct_ref/dct.cpp:29:0)
+INFO: [HLS 214-186] Unrolling loop 'Xpose_Col_Inner_Loop' (../dct_ref/dct.cpp:55:7) in function 'dct_2d' completely with a factor of 8 (../dct_ref/dct.cpp:29:0)
+INFO: [HLS 214-186] Unrolling loop 'Col_DCT_Loop' (../dct_ref/dct.cpp:48:4) in function 'dct_2d' completely with a factor of 8 (../dct_ref/dct.cpp:29:0)
+INFO: [HLS 214-186] Unrolling loop 'Xpose_Row_Outer_Loop' (../dct_ref/dct.cpp:42:4) in function 'dct_2d' completely with a factor of 8 (../dct_ref/dct.cpp:29:0)
+INFO: [HLS 214-186] Unrolling loop 'Xpose_Row_Inner_Loop' (../dct_ref/dct.cpp:44:7) in function 'dct_2d' completely with a factor of 8 (../dct_ref/dct.cpp:29:0)
+INFO: [HLS 214-186] Unrolling loop 'Row_DCT_Loop' (../dct_ref/dct.cpp:37:4) in function 'dct_2d' completely with a factor of 8 (../dct_ref/dct.cpp:29:0)
+INFO: [HLS 214-186] Unrolling loop 'DCT_Outer_Loop' (../dct_ref/dct.cpp:17:4) in function 'dct_1d' completely with a factor of 8 (../dct_ref/dct.cpp:9:0)
+INFO: [HLS 214-186] Unrolling loop 'DCT_Inner_Loop' (../dct_ref/dct.cpp:19:7) in function 'dct_1d' completely with a factor of 8 (../dct_ref/dct.cpp:9:0)
+INFO: [HLS 214-178] Inlining function 'read_data(short*, short (*) [8])' into 'dct' (../dct_ref/dct.cpp:84:0)
+INFO: [HLS 214-178] Inlining function 'write_data(short (*) [8], short*)' into 'dct' (../dct_ref/dct.cpp:84:0)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< RD_Loop_Row> at ../dct_ref/dct.cpp:64:4 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< WR_Loop_Row> at ../dct_ref/dct.cpp:77:4 
+INFO: [HLS 214-291] Loop 'WR_Loop_Col' is marked as complete unroll implied by the pipeline pragma (../dct_ref/dct.cpp:79:7)
+INFO: [HLS 214-291] Loop 'RD_Loop_Col' is marked as complete unroll implied by the pipeline pragma (../dct_ref/dct.cpp:66:7)
+INFO: [HLS 214-186] Unrolling loop 'WR_Loop_Col' (../dct_ref/dct.cpp:79:7) in function 'dct' completely with a factor of 8 (../dct_ref/dct.cpp:84:0)
+INFO: [HLS 214-186] Unrolling loop 'RD_Loop_Col' (../dct_ref/dct.cpp:66:7) in function 'dct' completely with a factor of 8 (../dct_ref/dct.cpp:84:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'row_outbuf' due to pipeline pragma (../dct_ref/dct.cpp:30:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=2' for array 'row_outbuf' due to pipeline pragma (../dct_ref/dct.cpp:30:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'col_inbuf' due to pipeline pragma (../dct_ref/dct.cpp:30:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=2' for array 'col_inbuf' due to pipeline pragma (../dct_ref/dct.cpp:30:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=2 dim=1' for array 'col_outbuf' due to pipeline pragma (../dct_ref/dct.cpp:30:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=2' for array 'col_outbuf' due to pipeline pragma (../dct_ref/dct.cpp:30:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=2' for array 'buf_2d_in' due to pipeline pragma (../dct_ref/dct.cpp:87:10)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=2' for array 'buf_2d_out' due to pipeline pragma (../dct_ref/dct.cpp:30:9)
+INFO: [HLS 214-248] Applying array_partition to 'row_outbuf': Cyclic partitioning with factor 2 on dimension 1. Complete partitioning on dimension 2. (../dct_ref/dct.cpp:31:13)
+INFO: [HLS 214-248] Applying array_partition to 'col_outbuf': Cyclic partitioning with factor 2 on dimension 1. Complete partitioning on dimension 2. (../dct_ref/dct.cpp:32:15)
+INFO: [HLS 214-248] Applying array_partition to 'col_inbuf': Cyclic partitioning with factor 2 on dimension 1. Complete partitioning on dimension 2. (../dct_ref/dct.cpp:32:33)
+INFO: [HLS 214-248] Applying array_partition to 'buf_2d_in': Complete partitioning on dimension 2. (../dct_ref/dct.cpp:87:10)
+INFO: [HLS 214-248] Applying array_partition to 'buf_2d_out': Complete partitioning on dimension 2. (../dct_ref/dct.cpp:88:10)
+WARNING: [HLS 214-414] Cannot apply interface mode 'ap_none' on function argument 'input' since this interface mode only supports scalar types (../dct_ref/dct.cpp:84:0)
+WARNING: [HLS 214-414] Cannot apply interface mode 'ap_none' on function argument 'output' since this interface mode only supports scalar types (../dct_ref/dct.cpp:84:0)
+INFO: [HLS 214-115] Multiple burst reads of length 2 and bit width 512 has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../dct_ref/dct.cpp:64:4)
+INFO: [HLS 214-115] Multiple burst writes of length 2 and bit width 512 has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../dct_ref/dct.cpp:77:4)
+INFO-FLOW: DBG:PUTS: copy_raw_kernel_xml ap_link_39: copying raw kernel.xml: C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/../../kernel.xml -> C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/kernel.internal.xml
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 10.093 seconds; current allocated memory: 235.992 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 235.992 MB.
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top dct -deadargelim -mem2reg -instcombine -dce -presyn-prepare -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -promote-dbg-pointer -norm-name C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.0.bc -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.055 seconds; current allocated memory: 242.672 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -scalarrepl -norm-name -dce -mem2reg -instcombine -directive-preproc -mem2reg -dse -dce -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -directive-preproc -mem2reg -dse -dce -globaldce C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.1.bc -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.2.prechk.bc -f 
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.2.prechk.bc -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.059 seconds; current allocated memory: 246.727 MB.
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.g.1.bc to C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db -interface-port-rename -directive-preproc -mem2reg -dse -dce -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -dce -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -loop-simplify -loop-bound -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -prepare-dynamic-array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -lcssa -loop-simplify -phi-select-elim -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -accesses-merge -function-inline -complex-op-raise -inst-simplify -globaldce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -duplicate-dataflow-processes -check-dataflow-syntax -legalize-stream-variable -globaldce -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -hls-dead-arg-elim -deadargelim -directive-preproc -canonicalize-dataflow -dce -globaldce -scalar-preprocessing -scalar-propagation2 -scalar-stream -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -clean-array-spec -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -hls-display -norm-name C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.o.1.bc -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.o.1.tmp.bc -f 
+Command         transform done; 0.106 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -barrier -norm-name C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.o.1.tmp.bc -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [XFORM 203-11] Balancing expressions in function 'dct_1d' (../dct_ref/dct.cpp:21:1)...24 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.152 seconds; current allocated memory: 270.582 MB.
+Execute         transform -hls -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -loop-sink-hoist -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg-lite -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -inst-simplify -cfgopt -simplifycfg-lite -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -deadargelim -dce -canonicalize-dataflow -dce -deadargelim -globaldce -mem2reg -bram-byte-enable -inst-simplify -inst-rectify -instcombine -adce -deadargelim -load-elim -read-loop-dep -loop-simplify -loop-extract-inner -directive-preproc -bitwidthmin2 -bitwidthmin2 -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable-spec-prop -mul2addshift -deadargelim -inst-simplify -dce -mem2reg -instcombine -gvn -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg-lite -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -float-op-raise -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg-lite -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg-lite -loop-simplify -mergereturn -inst-simplify -inst-rectify -globaldce -dce -load-elim -bitop-lower -float-op-raise -fma-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -recurrence-min -dce -share-scalar-alloca -deadargelim -dce -check-stream -norm-name -legalize -inst-clarity -bitwidth -dce -validate-dataflow -dump-loop-dep-to-ir -check-all-ssdm -dump-complexity-metric C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.o.2.bc -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+Execute           auto_get_db
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -cdfg-build C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.o.3.bc -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.104 seconds; current allocated memory: 300.449 MB.
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 0.375 sec.
+Command     elaborate done; 12.375 sec.
+Execute     ap_eval exec zip -j C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dut.hcp $dbDir/a.o.3.bc $dbDir/${topname}.rtl_wrap.cfg.tcl $dbDir/apatb_${topname}.cpp $dbDir/apatb_${topname}_util.cpp $dbDir/apatb_${topname}_ir.ll $dbDir/mapper_${topname}.cpp $dbDir/top-io-fe.xml $dbDir/kernel.internal.xml $workdir/../hls.app 
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'dct' ...
+Execute       ap_set_top_model dct 
+Execute       get_model_list dct -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model dct 
+Execute       preproc_iomode -model dct_Pipeline_WR_Loop_Row 
+Execute       preproc_iomode -model dct_2d 
+Execute       preproc_iomode -model dct_1d 
+Execute       preproc_iomode -model dct_Pipeline_RD_Loop_Row 
+Execute       get_model_list dct -filter all-wo-channel 
+INFO-FLOW: Model list for configure: dct_Pipeline_RD_Loop_Row dct_1d dct_2d dct_Pipeline_WR_Loop_Row dct
+INFO-FLOW: Configuring Module : dct_Pipeline_RD_Loop_Row ...
+Execute       set_default_model dct_Pipeline_RD_Loop_Row 
+Execute       apply_spec_resource_limit dct_Pipeline_RD_Loop_Row 
+INFO-FLOW: Configuring Module : dct_1d ...
+Execute       set_default_model dct_1d 
+Execute       apply_spec_resource_limit dct_1d 
+INFO-FLOW: Configuring Module : dct_2d ...
+Execute       set_default_model dct_2d 
+Execute       apply_spec_resource_limit dct_2d 
+INFO-FLOW: Configuring Module : dct_Pipeline_WR_Loop_Row ...
+Execute       set_default_model dct_Pipeline_WR_Loop_Row 
+Execute       apply_spec_resource_limit dct_Pipeline_WR_Loop_Row 
+INFO-FLOW: Configuring Module : dct ...
+Execute       set_default_model dct 
+Execute       apply_spec_resource_limit dct 
+INFO-FLOW: Model list for preprocess: dct_Pipeline_RD_Loop_Row dct_1d dct_2d dct_Pipeline_WR_Loop_Row dct
+INFO-FLOW: Preprocessing Module: dct_Pipeline_RD_Loop_Row ...
+Execute       set_default_model dct_Pipeline_RD_Loop_Row 
+Execute       cdfg_preprocess -model dct_Pipeline_RD_Loop_Row 
+Execute       rtl_gen_preprocess dct_Pipeline_RD_Loop_Row 
+INFO-FLOW: Preprocessing Module: dct_1d ...
+Execute       set_default_model dct_1d 
+Execute       cdfg_preprocess -model dct_1d 
+Execute       rtl_gen_preprocess dct_1d 
+INFO-FLOW: Preprocessing Module: dct_2d ...
+Execute       set_default_model dct_2d 
+Execute       cdfg_preprocess -model dct_2d 
+Execute       rtl_gen_preprocess dct_2d 
+INFO-FLOW: Preprocessing Module: dct_Pipeline_WR_Loop_Row ...
+Execute       set_default_model dct_Pipeline_WR_Loop_Row 
+Execute       cdfg_preprocess -model dct_Pipeline_WR_Loop_Row 
+Execute       rtl_gen_preprocess dct_Pipeline_WR_Loop_Row 
+INFO-FLOW: Preprocessing Module: dct ...
+Execute       set_default_model dct 
+Execute       cdfg_preprocess -model dct 
+Execute       rtl_gen_preprocess dct 
+INFO-FLOW: Model list for synthesis: dct_Pipeline_RD_Loop_Row dct_1d dct_2d dct_Pipeline_WR_Loop_Row dct
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dct_Pipeline_RD_Loop_Row' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model dct_Pipeline_RD_Loop_Row 
+Execute       schedule -model dct_Pipeline_RD_Loop_Row 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'RD_Loop_Row'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'RD_Loop_Row'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.152 seconds; current allocated memory: 304.418 MB.
+Execute       syn_report -verbosereport -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_Pipeline_RD_Loop_Row.verbose.sched.rpt 
+Execute         list_part -family xczu3eg-sfvc784-2-e 
+Execute           ap_family_info -name xczu3eg-sfvc784-2-e -data names 
+Execute           ap_part_info -quiet -name xczu3eg-sfvc784-2-e -data family 
+Execute       db_write -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_Pipeline_RD_Loop_Row.sched.adb -f 
+INFO-FLOW: Finish scheduling dct_Pipeline_RD_Loop_Row.
+Execute       set_default_model dct_Pipeline_RD_Loop_Row 
+Execute       bind -model dct_Pipeline_RD_Loop_Row 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.053 seconds; current allocated memory: 305.574 MB.
+Execute       syn_report -verbosereport -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_Pipeline_RD_Loop_Row.verbose.bind.rpt 
+Execute         list_part -family xczu3eg-sfvc784-2-e 
+Execute           ap_family_info -name xczu3eg-sfvc784-2-e -data names 
+Execute           ap_part_info -quiet -name xczu3eg-sfvc784-2-e -data family 
+Execute       db_write -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_Pipeline_RD_Loop_Row.bind.adb -f 
+INFO-FLOW: Finish binding dct_Pipeline_RD_Loop_Row.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dct_1d' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model dct_1d 
+Execute       schedule -model dct_1d 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln23_28) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln23_27) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln23_26) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln23_25) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln23_6) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln23_24) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln23_22) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln23_21) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln23_20) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln23_19) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln23_17) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln23_16) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln23_15) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln23_14) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln23_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln23_13) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln23_11) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln23_10) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln23_9) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln23_8) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining function 'dct_1d'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 0, Final II = 1, Depth = 5, function 'dct_1d'
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.198 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.238 seconds; current allocated memory: 306.578 MB.
+Execute       syn_report -verbosereport -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_1d.verbose.sched.rpt 
+Execute         list_part -family xczu3eg-sfvc784-2-e 
+Execute           ap_family_info -name xczu3eg-sfvc784-2-e -data names 
+Execute           ap_part_info -quiet -name xczu3eg-sfvc784-2-e -data family 
+Execute       db_write -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_1d.sched.adb -f 
+INFO-FLOW: Finish scheduling dct_1d.
+Execute       set_default_model dct_1d 
+Execute       bind -model dct_1d 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.068 seconds; current allocated memory: 306.766 MB.
+Execute       syn_report -verbosereport -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_1d.verbose.bind.rpt 
+Execute         list_part -family xczu3eg-sfvc784-2-e 
+Execute           ap_family_info -name xczu3eg-sfvc784-2-e -data names 
+Execute           ap_part_info -quiet -name xczu3eg-sfvc784-2-e -data family 
+Execute       db_write -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_1d.bind.adb -f 
+INFO-FLOW: Finish binding dct_1d.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dct_2d' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model dct_2d 
+Execute       schedule -model dct_2d 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'dct_2d'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 4, Final II = 4, Depth = 21, function 'dct_2d'
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.101 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.161 seconds; current allocated memory: 309.402 MB.
+Execute       syn_report -verbosereport -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_2d.verbose.sched.rpt 
+Execute         list_part -family xczu3eg-sfvc784-2-e 
+Execute           ap_family_info -name xczu3eg-sfvc784-2-e -data names 
+Execute           ap_part_info -quiet -name xczu3eg-sfvc784-2-e -data family 
+Execute       db_write -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_2d.sched.adb -f 
+INFO-FLOW: Finish scheduling dct_2d.
+Execute       set_default_model dct_2d 
+Execute       bind -model dct_2d 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 1.48 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.526 seconds; current allocated memory: 310.613 MB.
+Execute       syn_report -verbosereport -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_2d.verbose.bind.rpt 
+Execute         list_part -family xczu3eg-sfvc784-2-e 
+Execute           ap_family_info -name xczu3eg-sfvc784-2-e -data names 
+Execute           ap_part_info -quiet -name xczu3eg-sfvc784-2-e -data family 
+Execute       db_write -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_2d.bind.adb -f 
+INFO-FLOW: Finish binding dct_2d.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dct_Pipeline_WR_Loop_Row' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model dct_Pipeline_WR_Loop_Row 
+Execute       schedule -model dct_Pipeline_WR_Loop_Row 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'WR_Loop_Row'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'WR_Loop_Row'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.117 seconds; current allocated memory: 311.152 MB.
+Execute       syn_report -verbosereport -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_Pipeline_WR_Loop_Row.verbose.sched.rpt 
+Execute         list_part -family xczu3eg-sfvc784-2-e 
+Execute           ap_family_info -name xczu3eg-sfvc784-2-e -data names 
+Execute           ap_part_info -quiet -name xczu3eg-sfvc784-2-e -data family 
+Execute       db_write -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_Pipeline_WR_Loop_Row.sched.adb -f 
+INFO-FLOW: Finish scheduling dct_Pipeline_WR_Loop_Row.
+Execute       set_default_model dct_Pipeline_WR_Loop_Row 
+Execute       bind -model dct_Pipeline_WR_Loop_Row 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.055 seconds; current allocated memory: 311.363 MB.
+Execute       syn_report -verbosereport -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_Pipeline_WR_Loop_Row.verbose.bind.rpt 
+Execute         list_part -family xczu3eg-sfvc784-2-e 
+Execute           ap_family_info -name xczu3eg-sfvc784-2-e -data names 
+Execute           ap_part_info -quiet -name xczu3eg-sfvc784-2-e -data family 
+Execute       db_write -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_Pipeline_WR_Loop_Row.bind.adb -f 
+INFO-FLOW: Finish binding dct_Pipeline_WR_Loop_Row.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dct' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model dct 
+Execute       schedule -model dct 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.056 seconds; current allocated memory: 311.785 MB.
+Execute       syn_report -verbosereport -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.verbose.sched.rpt 
+Execute         list_part -family xczu3eg-sfvc784-2-e 
+Execute           ap_family_info -name xczu3eg-sfvc784-2-e -data names 
+Execute           ap_part_info -quiet -name xczu3eg-sfvc784-2-e -data family 
+Execute       db_write -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.sched.adb -f 
+INFO-FLOW: Finish scheduling dct.
+Execute       set_default_model dct 
+Execute       bind -model dct 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.065 seconds; current allocated memory: 312.504 MB.
+Execute       syn_report -verbosereport -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.verbose.bind.rpt 
+Execute         list_part -family xczu3eg-sfvc784-2-e 
+Execute           ap_family_info -name xczu3eg-sfvc784-2-e -data names 
+Execute           ap_part_info -quiet -name xczu3eg-sfvc784-2-e -data family 
+Execute       db_write -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.bind.adb -f 
+INFO-FLOW: Finish binding dct.
+Execute       get_model_list dct -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess dct_Pipeline_RD_Loop_Row 
+Execute       rtl_gen_preprocess dct_1d 
+Execute       rtl_gen_preprocess dct_2d 
+Execute       rtl_gen_preprocess dct_Pipeline_WR_Loop_Row 
+Execute       rtl_gen_preprocess dct 
+INFO-FLOW: Model list for RTL generation: dct_Pipeline_RD_Loop_Row dct_1d dct_2d dct_Pipeline_WR_Loop_Row dct
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dct_Pipeline_RD_Loop_Row' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model dct_Pipeline_RD_Loop_Row -top_prefix dct_ -sub_prefix dct_ -mg_file C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_Pipeline_RD_Loop_Row.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'dct_Pipeline_RD_Loop_Row' pipeline 'RD_Loop_Row' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'dct_Pipeline_RD_Loop_Row/m_axi_gmem_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'dct_Pipeline_RD_Loop_Row/m_axi_gmem_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'dct_Pipeline_RD_Loop_Row/m_axi_gmem_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'dct_Pipeline_RD_Loop_Row/m_axi_gmem_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'dct_Pipeline_RD_Loop_Row/m_axi_gmem_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'dct_Pipeline_RD_Loop_Row/m_axi_gmem_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'dct_Pipeline_RD_Loop_Row/m_axi_gmem_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'dct_Pipeline_RD_Loop_Row/m_axi_gmem_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'dct_Pipeline_RD_Loop_Row/m_axi_gmem_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'dct_Pipeline_RD_Loop_Row/m_axi_gmem_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'dct_Pipeline_RD_Loop_Row/m_axi_gmem_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'dct_Pipeline_RD_Loop_Row/m_axi_gmem_ARUSER' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dct_Pipeline_RD_Loop_Row'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.164 seconds; current allocated memory: 314.645 MB.
+Execute       source C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.rtl_wrap.cfg.tcl 
+Execute       gen_rtl dct_Pipeline_RD_Loop_Row -style xilinx -f -lang vhdl -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/vhdl/dct_dct_Pipeline_RD_Loop_Row 
+Execute       gen_rtl dct_Pipeline_RD_Loop_Row -style xilinx -f -lang vlog -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/verilog/dct_dct_Pipeline_RD_Loop_Row 
+Execute       syn_report -csynth -model dct_Pipeline_RD_Loop_Row -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/dct_Pipeline_RD_Loop_Row_csynth.rpt 
+Execute         list_part -family xczu3eg-sfvc784-2-e 
+Execute           ap_family_info -name xczu3eg-sfvc784-2-e -data names 
+Execute           ap_part_info -quiet -name xczu3eg-sfvc784-2-e -data family 
+Execute       syn_report -rtlxml -model dct_Pipeline_RD_Loop_Row -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/dct_Pipeline_RD_Loop_Row_csynth.xml 
+Execute         list_part -family xczu3eg-sfvc784-2-e 
+Execute           ap_family_info -name xczu3eg-sfvc784-2-e -data names 
+Execute           ap_part_info -quiet -name xczu3eg-sfvc784-2-e -data family 
+Execute       syn_report -verbosereport -model dct_Pipeline_RD_Loop_Row -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_Pipeline_RD_Loop_Row.verbose.rpt 
+Execute         list_part -family xczu3eg-sfvc784-2-e 
+Execute           ap_family_info -name xczu3eg-sfvc784-2-e -data names 
+Execute           ap_part_info -quiet -name xczu3eg-sfvc784-2-e -data family 
+Execute       db_write -model dct_Pipeline_RD_Loop_Row -f -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_Pipeline_RD_Loop_Row.adb 
+Execute       db_write -model dct_Pipeline_RD_Loop_Row -bindview -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info dct_Pipeline_RD_Loop_Row -p C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_Pipeline_RD_Loop_Row 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dct_1d' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model dct_1d -top_prefix dct_ -sub_prefix dct_ -mg_file C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_1d.compgen.tcl 
+INFO: [RTGEN 206-100] Generating core module 'ama_addmuladd_18s_16s_13ns_29ns_29_4_0': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ama_submuladd_16s_16s_12ns_29s_29_4_0': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ama_submuladd_16s_16s_13ns_29s_29_4_0': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ama_submuladd_18s_16s_14ns_29ns_29_4_0': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_14ns_29ns_29_4_0': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_14ns_29s_29_4_0': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_15s_13ns_29_4_0': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_15s_29ns_29_4_0': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_15s_29s_29_4_0': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_17s_12ns_13ns_29_4_0': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_17s_12ns_29s_29_4_0': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_17s_13ns_13ns_29_4_0': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_17s_13ns_29s_29_4_0': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_18s_13ns_13ns_29_4_0': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_18s_14ns_13ns_29_4_0': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_15ns_29_1_0': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_15s_29_1_0': 5 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dct_1d'.
+Command       create_rtl_model done; 0.188 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.709 seconds; current allocated memory: 318.629 MB.
+Execute       source C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.rtl_wrap.cfg.tcl 
+Execute       gen_rtl dct_1d -style xilinx -f -lang vhdl -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/vhdl/dct_dct_1d 
+Execute       gen_rtl dct_1d -style xilinx -f -lang vlog -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/verilog/dct_dct_1d 
+Execute       syn_report -csynth -model dct_1d -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/dct_1d_csynth.rpt 
+Execute         list_part -family xczu3eg-sfvc784-2-e 
+Execute           ap_family_info -name xczu3eg-sfvc784-2-e -data names 
+Execute           ap_part_info -quiet -name xczu3eg-sfvc784-2-e -data family 
+Execute       syn_report -rtlxml -model dct_1d -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/dct_1d_csynth.xml 
+Execute         list_part -family xczu3eg-sfvc784-2-e 
+Execute           ap_family_info -name xczu3eg-sfvc784-2-e -data names 
+Execute           ap_part_info -quiet -name xczu3eg-sfvc784-2-e -data family 
+Execute       syn_report -verbosereport -model dct_1d -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_1d.verbose.rpt 
+Execute         list_part -family xczu3eg-sfvc784-2-e 
+Execute           ap_family_info -name xczu3eg-sfvc784-2-e -data names 
+Execute           ap_part_info -quiet -name xczu3eg-sfvc784-2-e -data family 
+Execute       db_write -model dct_1d -f -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_1d.adb 
+Execute       db_write -model dct_1d -bindview -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info dct_1d -p C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_1d 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dct_2d' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model dct_2d -top_prefix dct_ -sub_prefix dct_ -mg_file C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_2d.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'dct_2d' pipeline 'dct_2d' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dct_2d'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.264 seconds; current allocated memory: 324.254 MB.
+Execute       source C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.rtl_wrap.cfg.tcl 
+Execute       gen_rtl dct_2d -style xilinx -f -lang vhdl -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/vhdl/dct_dct_2d 
+Execute       gen_rtl dct_2d -style xilinx -f -lang vlog -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/verilog/dct_dct_2d 
+Execute       syn_report -csynth -model dct_2d -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/dct_2d_csynth.rpt 
+Execute         list_part -family xczu3eg-sfvc784-2-e 
+Execute           ap_family_info -name xczu3eg-sfvc784-2-e -data names 
+Execute           ap_part_info -quiet -name xczu3eg-sfvc784-2-e -data family 
+Execute       syn_report -rtlxml -model dct_2d -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/dct_2d_csynth.xml 
+Execute         list_part -family xczu3eg-sfvc784-2-e 
+Execute           ap_family_info -name xczu3eg-sfvc784-2-e -data names 
+Execute           ap_part_info -quiet -name xczu3eg-sfvc784-2-e -data family 
+Execute       syn_report -verbosereport -model dct_2d -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_2d.verbose.rpt 
+Execute         list_part -family xczu3eg-sfvc784-2-e 
+Execute           ap_family_info -name xczu3eg-sfvc784-2-e -data names 
+Execute           ap_part_info -quiet -name xczu3eg-sfvc784-2-e -data family 
+Execute       db_write -model dct_2d -f -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_2d.adb 
+Execute       db_write -model dct_2d -bindview -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info dct_2d -p C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_2d 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dct_Pipeline_WR_Loop_Row' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model dct_Pipeline_WR_Loop_Row -top_prefix dct_ -sub_prefix dct_ -mg_file C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_Pipeline_WR_Loop_Row.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'dct_Pipeline_WR_Loop_Row' pipeline 'WR_Loop_Row' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'dct_Pipeline_WR_Loop_Row/m_axi_gmem_AWVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'dct_Pipeline_WR_Loop_Row/m_axi_gmem_AWADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'dct_Pipeline_WR_Loop_Row/m_axi_gmem_AWID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'dct_Pipeline_WR_Loop_Row/m_axi_gmem_AWLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'dct_Pipeline_WR_Loop_Row/m_axi_gmem_AWSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'dct_Pipeline_WR_Loop_Row/m_axi_gmem_AWBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'dct_Pipeline_WR_Loop_Row/m_axi_gmem_AWLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'dct_Pipeline_WR_Loop_Row/m_axi_gmem_AWCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'dct_Pipeline_WR_Loop_Row/m_axi_gmem_AWPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'dct_Pipeline_WR_Loop_Row/m_axi_gmem_AWQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'dct_Pipeline_WR_Loop_Row/m_axi_gmem_AWREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'dct_Pipeline_WR_Loop_Row/m_axi_gmem_AWUSER' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'dct_Pipeline_WR_Loop_Row/m_axi_gmem_BREADY' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dct_Pipeline_WR_Loop_Row'.
+Command       create_rtl_model done; 1.112 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 1.547 seconds; current allocated memory: 330.688 MB.
+Execute       source C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.rtl_wrap.cfg.tcl 
+Execute       gen_rtl dct_Pipeline_WR_Loop_Row -style xilinx -f -lang vhdl -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/vhdl/dct_dct_Pipeline_WR_Loop_Row 
+Execute       gen_rtl dct_Pipeline_WR_Loop_Row -style xilinx -f -lang vlog -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/verilog/dct_dct_Pipeline_WR_Loop_Row 
+Execute       syn_report -csynth -model dct_Pipeline_WR_Loop_Row -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/dct_Pipeline_WR_Loop_Row_csynth.rpt 
+Execute         list_part -family xczu3eg-sfvc784-2-e 
+Execute           ap_family_info -name xczu3eg-sfvc784-2-e -data names 
+Execute           ap_part_info -quiet -name xczu3eg-sfvc784-2-e -data family 
+Execute       syn_report -rtlxml -model dct_Pipeline_WR_Loop_Row -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/dct_Pipeline_WR_Loop_Row_csynth.xml 
+Execute         list_part -family xczu3eg-sfvc784-2-e 
+Execute           ap_family_info -name xczu3eg-sfvc784-2-e -data names 
+Execute           ap_part_info -quiet -name xczu3eg-sfvc784-2-e -data family 
+Execute       syn_report -verbosereport -model dct_Pipeline_WR_Loop_Row -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_Pipeline_WR_Loop_Row.verbose.rpt 
+Execute         list_part -family xczu3eg-sfvc784-2-e 
+Execute           ap_family_info -name xczu3eg-sfvc784-2-e -data names 
+Execute           ap_part_info -quiet -name xczu3eg-sfvc784-2-e -data family 
+Execute       db_write -model dct_Pipeline_WR_Loop_Row -f -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_Pipeline_WR_Loop_Row.adb 
+Execute       db_write -model dct_Pipeline_WR_Loop_Row -bindview -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info dct_Pipeline_WR_Loop_Row -p C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_Pipeline_WR_Loop_Row 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dct' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model dct -top_prefix  -sub_prefix dct_ -mg_file C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.compgen.tcl 
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'dct/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'dct/input_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'dct/output_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'dct' to 's_axilite & ap_ctrl_chain'.
+INFO: [RTGEN 206-100] Bundling port 'input_r', 'output_r' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dct'.
+INFO: [RTMG 210-278] Implementing memory 'dct_buf_2d_in_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'dct_buf_2d_out_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.207 seconds; current allocated memory: 335.102 MB.
+Execute       source C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.rtl_wrap.cfg.tcl 
+Execute       gen_rtl dct -istop -style xilinx -f -lang vhdl -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/vhdl/dct 
+Execute       gen_rtl dct -istop -style xilinx -f -lang vlog -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/verilog/dct 
+Execute       syn_report -csynth -model dct -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/dct_csynth.rpt 
+Execute         list_part -family xczu3eg-sfvc784-2-e 
+Execute           ap_family_info -name xczu3eg-sfvc784-2-e -data names 
+Execute           ap_part_info -quiet -name xczu3eg-sfvc784-2-e -data family 
+Execute       syn_report -rtlxml -model dct -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/dct_csynth.xml 
+Execute         list_part -family xczu3eg-sfvc784-2-e 
+Execute           ap_family_info -name xczu3eg-sfvc784-2-e -data names 
+Execute           ap_part_info -quiet -name xczu3eg-sfvc784-2-e -data family 
+Execute       syn_report -verbosereport -model dct -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.verbose.rpt 
+Execute         list_part -family xczu3eg-sfvc784-2-e 
+Execute           ap_family_info -name xczu3eg-sfvc784-2-e -data names 
+Execute           ap_part_info -quiet -name xczu3eg-sfvc784-2-e -data family 
+Execute       db_write -model dct -f -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.adb 
+Execute       db_write -model dct -bindview -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info dct -p C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct 
+Execute       export_constraint_db -f -tool general -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.constraint.tcl 
+Execute       syn_report -designview -model dct -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.design.xml 
+Execute       syn_report -csynthDesign -model dct -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/csynth.rpt -MHOut C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/kernel_module_hierarchy.tcl 
+Execute         list_part -family xczu3eg-sfvc784-2-e 
+Execute           ap_family_info -name xczu3eg-sfvc784-2-e -data names 
+Execute           ap_part_info -quiet -name xczu3eg-sfvc784-2-e -data family 
+Execute       syn_report -wcfg -model dct -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model dct -o C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.protoinst 
+Execute       sc_get_clocks dct 
+Execute       sc_get_portdomain dct 
+INFO-FLOW: Model list for RTL component generation: dct_Pipeline_RD_Loop_Row dct_1d dct_2d dct_Pipeline_WR_Loop_Row dct
+INFO-FLOW: Handling components in module [dct_Pipeline_RD_Loop_Row] ... 
+Execute       source C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_Pipeline_RD_Loop_Row.compgen.tcl 
+INFO-FLOW: Found component dct_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model dct_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [dct_1d] ... 
+Execute       source C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_1d.compgen.tcl 
+INFO-FLOW: Found component dct_mul_16s_15ns_29_1_0.
+INFO-FLOW: Append model dct_mul_16s_15ns_29_1_0
+INFO-FLOW: Found component dct_mul_16s_15s_29_1_0.
+INFO-FLOW: Append model dct_mul_16s_15s_29_1_0
+INFO-FLOW: Found component dct_ama_submuladd_16s_16s_12ns_29s_29_4_0.
+INFO-FLOW: Append model dct_ama_submuladd_16s_16s_12ns_29s_29_4_0
+INFO-FLOW: Found component dct_mac_muladd_18s_14ns_13ns_29_4_0.
+INFO-FLOW: Append model dct_mac_muladd_18s_14ns_13ns_29_4_0
+INFO-FLOW: Found component dct_mac_muladd_16s_14ns_29s_29_4_0.
+INFO-FLOW: Append model dct_mac_muladd_16s_14ns_29s_29_4_0
+INFO-FLOW: Found component dct_ama_submuladd_16s_16s_13ns_29s_29_4_0.
+INFO-FLOW: Append model dct_ama_submuladd_16s_16s_13ns_29s_29_4_0
+INFO-FLOW: Found component dct_mac_muladd_16s_15s_29s_29_4_0.
+INFO-FLOW: Append model dct_mac_muladd_16s_15s_29s_29_4_0
+INFO-FLOW: Found component dct_mac_muladd_18s_13ns_13ns_29_4_0.
+INFO-FLOW: Append model dct_mac_muladd_18s_13ns_13ns_29_4_0
+INFO-FLOW: Found component dct_mac_muladd_16s_14ns_29ns_29_4_0.
+INFO-FLOW: Append model dct_mac_muladd_16s_14ns_29ns_29_4_0
+INFO-FLOW: Found component dct_mac_muladd_16s_15s_13ns_29_4_0.
+INFO-FLOW: Append model dct_mac_muladd_16s_15s_13ns_29_4_0
+INFO-FLOW: Found component dct_mac_muladd_17s_13ns_29s_29_4_0.
+INFO-FLOW: Append model dct_mac_muladd_17s_13ns_29s_29_4_0
+INFO-FLOW: Found component dct_ama_addmuladd_18s_16s_13ns_29ns_29_4_0.
+INFO-FLOW: Append model dct_ama_addmuladd_18s_16s_13ns_29ns_29_4_0
+INFO-FLOW: Found component dct_mac_muladd_17s_12ns_13ns_29_4_0.
+INFO-FLOW: Append model dct_mac_muladd_17s_12ns_13ns_29_4_0
+INFO-FLOW: Found component dct_mac_muladd_16s_15s_29ns_29_4_0.
+INFO-FLOW: Append model dct_mac_muladd_16s_15s_29ns_29_4_0
+INFO-FLOW: Found component dct_mac_muladd_17s_12ns_29s_29_4_0.
+INFO-FLOW: Append model dct_mac_muladd_17s_12ns_29s_29_4_0
+INFO-FLOW: Found component dct_mac_muladd_17s_13ns_13ns_29_4_0.
+INFO-FLOW: Append model dct_mac_muladd_17s_13ns_13ns_29_4_0
+INFO-FLOW: Found component dct_ama_submuladd_18s_16s_14ns_29ns_29_4_0.
+INFO-FLOW: Append model dct_ama_submuladd_18s_16s_14ns_29ns_29_4_0
+INFO-FLOW: Handling components in module [dct_2d] ... 
+Execute       source C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_2d.compgen.tcl 
+INFO-FLOW: Handling components in module [dct_Pipeline_WR_Loop_Row] ... 
+Execute       source C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_Pipeline_WR_Loop_Row.compgen.tcl 
+INFO-FLOW: Found component dct_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model dct_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [dct] ... 
+Execute       source C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.compgen.tcl 
+INFO-FLOW: Found component dct_buf_2d_in_RAM_AUTO_1R1W.
+INFO-FLOW: Append model dct_buf_2d_in_RAM_AUTO_1R1W
+INFO-FLOW: Found component dct_buf_2d_out_RAM_AUTO_1R1W.
+INFO-FLOW: Append model dct_buf_2d_out_RAM_AUTO_1R1W
+INFO-FLOW: Found component dct_gmem_m_axi.
+INFO-FLOW: Append model dct_gmem_m_axi
+INFO-FLOW: Found component dct_control_s_axi.
+INFO-FLOW: Append model dct_control_s_axi
+INFO-FLOW: Append model dct_Pipeline_RD_Loop_Row
+INFO-FLOW: Append model dct_1d
+INFO-FLOW: Append model dct_2d
+INFO-FLOW: Append model dct_Pipeline_WR_Loop_Row
+INFO-FLOW: Append model dct
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: dct_flow_control_loop_pipe_sequential_init dct_mul_16s_15ns_29_1_0 dct_mul_16s_15s_29_1_0 dct_ama_submuladd_16s_16s_12ns_29s_29_4_0 dct_mac_muladd_18s_14ns_13ns_29_4_0 dct_mac_muladd_16s_14ns_29s_29_4_0 dct_ama_submuladd_16s_16s_13ns_29s_29_4_0 dct_mac_muladd_16s_15s_29s_29_4_0 dct_mac_muladd_18s_13ns_13ns_29_4_0 dct_mac_muladd_16s_14ns_29ns_29_4_0 dct_mac_muladd_16s_15s_13ns_29_4_0 dct_mac_muladd_17s_13ns_29s_29_4_0 dct_ama_addmuladd_18s_16s_13ns_29ns_29_4_0 dct_mac_muladd_17s_12ns_13ns_29_4_0 dct_mac_muladd_16s_15s_29ns_29_4_0 dct_mac_muladd_17s_12ns_29s_29_4_0 dct_mac_muladd_17s_13ns_13ns_29_4_0 dct_ama_submuladd_18s_16s_14ns_29ns_29_4_0 dct_flow_control_loop_pipe_sequential_init dct_buf_2d_in_RAM_AUTO_1R1W dct_buf_2d_out_RAM_AUTO_1R1W dct_gmem_m_axi dct_control_s_axi dct_Pipeline_RD_Loop_Row dct_1d dct_2d dct_Pipeline_WR_Loop_Row dct
+INFO-FLOW: Generating C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/autopilot.rtl.models.txt file...
+INFO-FLOW: To file: write model dct_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model dct_mul_16s_15ns_29_1_0
+INFO-FLOW: To file: write model dct_mul_16s_15s_29_1_0
+INFO-FLOW: To file: write model dct_ama_submuladd_16s_16s_12ns_29s_29_4_0
+INFO-FLOW: To file: write model dct_mac_muladd_18s_14ns_13ns_29_4_0
+INFO-FLOW: To file: write model dct_mac_muladd_16s_14ns_29s_29_4_0
+INFO-FLOW: To file: write model dct_ama_submuladd_16s_16s_13ns_29s_29_4_0
+INFO-FLOW: To file: write model dct_mac_muladd_16s_15s_29s_29_4_0
+INFO-FLOW: To file: write model dct_mac_muladd_18s_13ns_13ns_29_4_0
+INFO-FLOW: To file: write model dct_mac_muladd_16s_14ns_29ns_29_4_0
+INFO-FLOW: To file: write model dct_mac_muladd_16s_15s_13ns_29_4_0
+INFO-FLOW: To file: write model dct_mac_muladd_17s_13ns_29s_29_4_0
+INFO-FLOW: To file: write model dct_ama_addmuladd_18s_16s_13ns_29ns_29_4_0
+INFO-FLOW: To file: write model dct_mac_muladd_17s_12ns_13ns_29_4_0
+INFO-FLOW: To file: write model dct_mac_muladd_16s_15s_29ns_29_4_0
+INFO-FLOW: To file: write model dct_mac_muladd_17s_12ns_29s_29_4_0
+INFO-FLOW: To file: write model dct_mac_muladd_17s_13ns_13ns_29_4_0
+INFO-FLOW: To file: write model dct_ama_submuladd_18s_16s_14ns_29ns_29_4_0
+INFO-FLOW: To file: write model dct_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model dct_buf_2d_in_RAM_AUTO_1R1W
+INFO-FLOW: To file: write model dct_buf_2d_out_RAM_AUTO_1R1W
+INFO-FLOW: To file: write model dct_gmem_m_axi
+INFO-FLOW: To file: write model dct_control_s_axi
+INFO-FLOW: To file: write model dct_Pipeline_RD_Loop_Row
+INFO-FLOW: To file: write model dct_1d
+INFO-FLOW: To file: write model dct_2d
+INFO-FLOW: To file: write model dct_Pipeline_WR_Loop_Row
+INFO-FLOW: To file: write model dct
+INFO-FLOW: Generating C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/autopilot.rtl.models.tcl file...
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate_csynth_design
+INFO-FLOW: DBG:PUTS: read_platform_lib C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/global.setting.tcl
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/op.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/interface.gen 
+Execute       source C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=8.000 (was NA)
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::generate_ip_cores gen_sim_model='1' gen_fp_models='0' gen_for_export='0' dstSCDir='' dstVhdlDir='C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/vhdl' dstVlogDir='C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/vlog' tclDir='C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db' modelList='dct_flow_control_loop_pipe_sequential_init
+dct_mul_16s_15ns_29_1_0
+dct_mul_16s_15s_29_1_0
+dct_ama_submuladd_16s_16s_12ns_29s_29_4_0
+dct_mac_muladd_18s_14ns_13ns_29_4_0
+dct_mac_muladd_16s_14ns_29s_29_4_0
+dct_ama_submuladd_16s_16s_13ns_29s_29_4_0
+dct_mac_muladd_16s_15s_29s_29_4_0
+dct_mac_muladd_18s_13ns_13ns_29_4_0
+dct_mac_muladd_16s_14ns_29ns_29_4_0
+dct_mac_muladd_16s_15s_13ns_29_4_0
+dct_mac_muladd_17s_13ns_29s_29_4_0
+dct_ama_addmuladd_18s_16s_13ns_29ns_29_4_0
+dct_mac_muladd_17s_12ns_13ns_29_4_0
+dct_mac_muladd_16s_15s_29ns_29_4_0
+dct_mac_muladd_17s_12ns_29s_29_4_0
+dct_mac_muladd_17s_13ns_13ns_29_4_0
+dct_ama_submuladd_18s_16s_14ns_29ns_29_4_0
+dct_flow_control_loop_pipe_sequential_init
+dct_buf_2d_in_RAM_AUTO_1R1W
+dct_buf_2d_out_RAM_AUTO_1R1W
+dct_gmem_m_axi
+dct_control_s_axi
+dct_Pipeline_RD_Loop_Row
+dct_1d
+dct_2d
+dct_Pipeline_WR_Loop_Row
+dct
+' expOnly='0'
+Execute       source C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xczu3eg-sfvc784-2-e -data names -quiet 
+Execute       ap_part_info -name xczu3eg-sfvc784-2-e -data info -quiet 
+Execute       source C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/global.setting.tcl 
+Execute       source C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/global.setting.tcl 
+Execute       source C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_Pipeline_RD_Loop_Row.compgen.tcl 
+Execute       source C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_1d.compgen.tcl 
+Execute       source C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_2d.compgen.tcl 
+Execute       source C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_Pipeline_WR_Loop_Row.compgen.tcl 
+Execute       source C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.compgen.tcl 
+Execute         source ./control.slave.tcl 
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.704 seconds; current allocated memory: 339.457 MB.
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::create_csynth_xml bind_info_var='bind_info' RtlSubPrefix='dct_' outfile=''
+INFO-FLOW: Running: create_csynth_xml read xml data
+INFO-FLOW: Done: create_csynth_xml read xml data time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml bind info
+INFO-FLOW: No bind nodes found for module_name dct_2d
+INFO-FLOW: Done: create_csynth_xml bind info time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml config info
+INFO-FLOW: Done: create_csynth_xml config info time: 0.2 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml write xml
+INFO-FLOW: Done: create_csynth_xml write xml time: 0 seconds per iteration
+INFO-FLOW: DBG:PUTS:      create_csynth_xml wrote csynth_xml=C:/GitRepos/EECE4632/Lab4/dct/dct/hls/syn/report/csynth.xml
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='0' modelList='dct_flow_control_loop_pipe_sequential_init
+dct_mul_16s_15ns_29_1_0
+dct_mul_16s_15s_29_1_0
+dct_ama_submuladd_16s_16s_12ns_29s_29_4_0
+dct_mac_muladd_18s_14ns_13ns_29_4_0
+dct_mac_muladd_16s_14ns_29s_29_4_0
+dct_ama_submuladd_16s_16s_13ns_29s_29_4_0
+dct_mac_muladd_16s_15s_29s_29_4_0
+dct_mac_muladd_18s_13ns_13ns_29_4_0
+dct_mac_muladd_16s_14ns_29ns_29_4_0
+dct_mac_muladd_16s_15s_13ns_29_4_0
+dct_mac_muladd_17s_13ns_29s_29_4_0
+dct_ama_addmuladd_18s_16s_13ns_29ns_29_4_0
+dct_mac_muladd_17s_12ns_13ns_29_4_0
+dct_mac_muladd_16s_15s_29ns_29_4_0
+dct_mac_muladd_17s_12ns_29s_29_4_0
+dct_mac_muladd_17s_13ns_13ns_29_4_0
+dct_ama_submuladd_18s_16s_14ns_29ns_29_4_0
+dct_flow_control_loop_pipe_sequential_init
+dct_buf_2d_in_RAM_AUTO_1R1W
+dct_buf_2d_out_RAM_AUTO_1R1W
+dct_gmem_m_axi
+dct_control_s_axi
+dct_Pipeline_RD_Loop_Row
+dct_1d
+dct_2d
+dct_Pipeline_WR_Loop_Row
+dct
+' rtl_lang='both' bootstrap_tcl='false' outdir='' outfilename=''
+Execute       source C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/global.setting.tcl 
+Execute       source C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/global.setting.tcl 
+Execute       source C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/top-io-be.tcl 
+Execute       source C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.tbgen.tcl 
+Execute       source C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.compgen.dataonly.tcl 
+Execute       source C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.compgen.dataonly.tcl 
+Execute       source C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.rtl_wrap.cfg.tcl 
+Execute       source C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.compgen.dataonly.tcl 
+Execute       source C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_Pipeline_RD_Loop_Row.tbgen.tcl 
+Execute       source C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_1d.tbgen.tcl 
+Execute       source C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_2d.tbgen.tcl 
+Execute       source C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct_Pipeline_WR_Loop_Row.tbgen.tcl 
+Execute       source C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.tbgen.tcl 
+Execute       source C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xczu3eg-sfvc784-2-e -data names -quiet 
+Execute       ap_part_info -name xczu3eg-sfvc784-2-e -data info -quiet 
+Execute       source C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/dct.constraint.tcl 
+Execute       sc_get_clocks dct 
+Execute       source C:/GitRepos/EECE4632/Lab4/dct/dct/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::add_csynth_report_sections bind_info_dict='adapter_nodes {{BINDTYPE adapter ID {} IMPL {} LATENCY {} OPTYPE {} PRAGMA {} RTLNAME control_s_axi_U SOURCE {} VARIABLE {} LOOP {} BUNDLEDNAME control DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE s_axilite STORAGESIZE {} STORAGEUSAGE interface DISPNAME {bind_adapter }} {BINDTYPE adapter ID {} IMPL {} LATENCY {} OPTYPE {} PRAGMA {} RTLNAME gmem_m_axi_U SOURCE {} VARIABLE {} LOOP {} BUNDLEDNAME gmem DSP 0 BRAM 58 URAM 0 STORAGESUBTYPE m_axi STORAGESIZE {} STORAGEUSAGE interface DISPNAME {bind_adapter }}} cache_nodes {} report_dict {TOPINST dct MODULE2INSTS {dct dct dct_Pipeline_RD_Loop_Row grp_dct_Pipeline_RD_Loop_Row_fu_159 dct_2d grp_dct_2d_fu_174 dct_1d {grp_dct_1d_fu_1354 grp_dct_1d_fu_1374 grp_dct_1d_fu_1394 grp_dct_1d_fu_1406} dct_Pipeline_WR_Loop_Row grp_dct_Pipeline_WR_Loop_Row_fu_194} INST2MODULE {dct dct grp_dct_Pipeline_RD_Loop_Row_fu_159 dct_Pipeline_RD_Loop_Row grp_dct_2d_fu_174 dct_2d grp_dct_1d_fu_1354 dct_1d grp_dct_1d_fu_1374 dct_1d grp_dct_1d_fu_1394 dct_1d grp_dct_1d_fu_1406 dct_1d grp_dct_Pipeline_WR_Loop_Row_fu_194 dct_Pipeline_WR_Loop_Row} INSTDATA {dct {DEPTH 1 CHILDREN {grp_dct_Pipeline_RD_Loop_Row_fu_159 grp_dct_2d_fu_174 grp_dct_Pipeline_WR_Loop_Row_fu_194}} grp_dct_Pipeline_RD_Loop_Row_fu_159 {DEPTH 2 CHILDREN {}} grp_dct_2d_fu_174 {DEPTH 2 CHILDREN {grp_dct_1d_fu_1354 grp_dct_1d_fu_1374 grp_dct_1d_fu_1394 grp_dct_1d_fu_1406}} grp_dct_1d_fu_1354 {DEPTH 3 CHILDREN {}} grp_dct_1d_fu_1374 {DEPTH 3 CHILDREN {}} grp_dct_1d_fu_1394 {DEPTH 3 CHILDREN {}} grp_dct_1d_fu_1406 {DEPTH 3 CHILDREN {}} grp_dct_Pipeline_WR_Loop_Row_fu_194 {DEPTH 2 CHILDREN {}}} MODULEDATA {dct_Pipeline_RD_Loop_Row {BINDINFO {{BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln64_fu_249_p2 SOURCE ../dct_ref/dct.cpp:64 VARIABLE icmp_ln64 LOOP RD_Loop_Row BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln64_fu_255_p2 SOURCE ../dct_ref/dct.cpp:64 VARIABLE add_ln64 LOOP RD_Loop_Row BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln66_fu_265_p2 SOURCE ../dct_ref/dct.cpp:66 VARIABLE icmp_ln66 LOOP RD_Loop_Row BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false}} AREA {DSP 0 BRAM 0 URAM 0}} dct_1d {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME tmp_fu_186_p2 SOURCE ../dct_ref/dct.cpp:21 VARIABLE tmp LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME tmp5716_fu_215_p2 SOURCE ../dct_ref/dct.cpp:21 VARIABLE tmp5716 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln23_fu_239_p2 SOURCE ../dct_ref/dct.cpp:23 VARIABLE add_ln23 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_16s_14ns_29ns_29_4_0_U26 SOURCE ../dct_ref/dct.cpp:11 VARIABLE mul_ln11 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_16s_15ns_29_1_0_U11 SOURCE ../dct_ref/dct.cpp:21 VARIABLE mul_ln21 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_16s_15s_29_1_0_U16 SOURCE ../dct_ref/dct.cpp:21 VARIABLE mul_ln21_1 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_16s_15s_13ns_29_4_0_U27 SOURCE ../dct_ref/dct.cpp:21 VARIABLE mul_ln21_2 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE sub PRAGMA {} RTLNAME ama_submuladd_16s_16s_12ns_29s_29_4_0_U19 SOURCE ../dct_ref/dct.cpp:21 VARIABLE tmp4 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE sext PRAGMA {} RTLNAME ama_submuladd_16s_16s_12ns_29s_29_4_0_U19 SOURCE ../dct_ref/dct.cpp:21 VARIABLE tmp4_cast LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sext} VISIBLE false} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME ama_submuladd_16s_16s_12ns_29s_29_4_0_U19 SOURCE ../dct_ref/dct.cpp:21 VARIABLE tmp5 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME tmp7_fu_258_p2 SOURCE ../dct_ref/dct.cpp:21 VARIABLE tmp7 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_17s_13ns_29s_29_4_0_U28 SOURCE ../dct_ref/dct.cpp:23 VARIABLE mul_ln23 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME ama_submuladd_16s_16s_12ns_29s_29_4_0_U19 SOURCE ../dct_ref/dct.cpp:23 VARIABLE add_ln23_8 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_16s_14ns_29ns_29_4_0_U26 SOURCE ../dct_ref/dct.cpp:23 VARIABLE add_ln23_9 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_17s_13ns_29s_29_4_0_U28 SOURCE ../dct_ref/dct.cpp:23 VARIABLE add_ln23_10 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_16s_15s_13ns_29_4_0_U27 SOURCE ../dct_ref/dct.cpp:23 VARIABLE add_ln23_11 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME tmp11_fu_268_p2 SOURCE ../dct_ref/dct.cpp:21 VARIABLE tmp11 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME grp_fu_657_p0 SOURCE ../dct_ref/dct.cpp:21 VARIABLE tmp12 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME ama_addmuladd_18s_16s_13ns_29ns_29_4_0_U29 SOURCE ../dct_ref/dct.cpp:21 VARIABLE tmp13 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE sext PRAGMA {} RTLNAME ama_addmuladd_18s_16s_13ns_29ns_29_4_0_U29 SOURCE ../dct_ref/dct.cpp:21 VARIABLE tmp13_cast LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sext} VISIBLE false} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME ama_addmuladd_18s_16s_13ns_29ns_29_4_0_U29 SOURCE ../dct_ref/dct.cpp:21 VARIABLE tmp14 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME tmp17_fu_118_p2 SOURCE ../dct_ref/dct.cpp:21 VARIABLE tmp17 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_18s_14ns_13ns_29_4_0_U20 SOURCE ../dct_ref/dct.cpp:23 VARIABLE mul_ln23_1 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_18s_14ns_13ns_29_4_0_U20 SOURCE ../dct_ref/dct.cpp:23 VARIABLE add_ln23_13 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME ama_addmuladd_18s_16s_13ns_29ns_29_4_0_U29 SOURCE ../dct_ref/dct.cpp:23 VARIABLE add_ln23_2 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_16s_14ns_29ns_29_4_0_U30 SOURCE ../dct_ref/dct.cpp:11 VARIABLE mul_ln11_1 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_16s_15s_29_1_0_U12 SOURCE ../dct_ref/dct.cpp:21 VARIABLE mul_ln21_3 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_16s_14ns_29s_29_4_0_U21 SOURCE ../dct_ref/dct.cpp:21 VARIABLE mul_ln21_4 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_16s_15s_29_1_0_U13 SOURCE ../dct_ref/dct.cpp:21 VARIABLE mul_ln21_5 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE sub PRAGMA {} RTLNAME ama_submuladd_16s_16s_13ns_29s_29_4_0_U22 SOURCE ../dct_ref/dct.cpp:11 VARIABLE tmp22 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE sext PRAGMA {} RTLNAME ama_submuladd_16s_16s_13ns_29s_29_4_0_U22 SOURCE ../dct_ref/dct.cpp:11 VARIABLE tmp22_cast LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sext} VISIBLE false} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME ama_submuladd_16s_16s_13ns_29s_29_4_0_U22 SOURCE ../dct_ref/dct.cpp:11 VARIABLE tmp23 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME tmp25_fu_287_p2 SOURCE ../dct_ref/dct.cpp:21 VARIABLE tmp25 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_17s_12ns_13ns_29_4_0_U31 SOURCE ../dct_ref/dct.cpp:23 VARIABLE mul_ln23_2 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_16s_14ns_29s_29_4_0_U21 SOURCE ../dct_ref/dct.cpp:23 VARIABLE add_ln23_14 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_16s_14ns_29ns_29_4_0_U30 SOURCE ../dct_ref/dct.cpp:23 VARIABLE add_ln23_15 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME ama_submuladd_16s_16s_13ns_29s_29_4_0_U22 SOURCE ../dct_ref/dct.cpp:23 VARIABLE add_ln23_16 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_17s_12ns_13ns_29_4_0_U31 SOURCE ../dct_ref/dct.cpp:23 VARIABLE add_ln23_17 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME tmp27_fu_297_p2 SOURCE ../dct_ref/dct.cpp:21 VARIABLE tmp27 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln23_fu_333_p2 SOURCE ../dct_ref/dct.cpp:23 VARIABLE sub_ln23 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_16s_15s_29ns_29_4_0_U32 SOURCE ../dct_ref/dct.cpp:21 VARIABLE mul_ln21_6 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_16s_15ns_29_1_0_U14 SOURCE ../dct_ref/dct.cpp:21 VARIABLE mul_ln21_7 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_16s_15s_29s_29_4_0_U23 SOURCE ../dct_ref/dct.cpp:21 VARIABLE mul_ln21_8 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_16s_15ns_29_1_0_U17 SOURCE ../dct_ref/dct.cpp:21 VARIABLE mul_ln21_9 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_17s_12ns_29s_29_4_0_U33 SOURCE ../dct_ref/dct.cpp:21 VARIABLE tmp33 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME tmp35_fu_355_p2 SOURCE ../dct_ref/dct.cpp:21 VARIABLE tmp35 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_17s_13ns_13ns_29_4_0_U34 SOURCE ../dct_ref/dct.cpp:23 VARIABLE mul_ln23_3 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_16s_15s_29s_29_4_0_U23 SOURCE ../dct_ref/dct.cpp:23 VARIABLE add_ln23_19 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_16s_15s_29ns_29_4_0_U32 SOURCE ../dct_ref/dct.cpp:23 VARIABLE add_ln23_20 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_17s_12ns_29s_29_4_0_U33 SOURCE ../dct_ref/dct.cpp:23 VARIABLE add_ln23_21 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_17s_13ns_13ns_29_4_0_U34 SOURCE ../dct_ref/dct.cpp:23 VARIABLE add_ln23_22 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME tmp39_fu_364_p2 SOURCE ../dct_ref/dct.cpp:21 VARIABLE tmp39 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME grp_fu_713_p0 SOURCE ../dct_ref/dct.cpp:21 VARIABLE tmp40 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE sub PRAGMA {} RTLNAME ama_submuladd_18s_16s_14ns_29ns_29_4_0_U35 SOURCE ../dct_ref/dct.cpp:21 VARIABLE tmp41 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE sext PRAGMA {} RTLNAME ama_submuladd_18s_16s_14ns_29ns_29_4_0_U35 SOURCE ../dct_ref/dct.cpp:21 VARIABLE tmp41_cast LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sext} VISIBLE false} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME ama_submuladd_18s_16s_14ns_29ns_29_4_0_U35 SOURCE ../dct_ref/dct.cpp:21 VARIABLE tmp42 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_18s_13ns_13ns_29_4_0_U24 SOURCE ../dct_ref/dct.cpp:23 VARIABLE mul_ln23_4 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_18s_13ns_13ns_29_4_0_U24 SOURCE ../dct_ref/dct.cpp:23 VARIABLE add_ln23_24 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME ama_submuladd_18s_16s_14ns_29ns_29_4_0_U35 SOURCE ../dct_ref/dct.cpp:23 VARIABLE add_ln23_6 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_16s_14ns_29ns_29_4_0_U36 SOURCE ../dct_ref/dct.cpp:21 VARIABLE mul_ln21_10 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_16s_15s_29_1_0_U15 SOURCE ../dct_ref/dct.cpp:21 VARIABLE mul_ln21_11 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_16s_14ns_29s_29_4_0_U25 SOURCE ../dct_ref/dct.cpp:21 VARIABLE mul_ln21_12 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_16s_15s_29_1_0_U18 SOURCE ../dct_ref/dct.cpp:21 VARIABLE mul_ln21_13 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_17s_13ns_29s_29_4_0_U37 SOURCE ../dct_ref/dct.cpp:21 VARIABLE tmp51 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_17s_12ns_13ns_29_4_0_U38 SOURCE ../dct_ref/dct.cpp:23 VARIABLE mul_ln23_5 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_16s_14ns_29s_29_4_0_U25 SOURCE ../dct_ref/dct.cpp:23 VARIABLE add_ln23_25 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_16s_14ns_29ns_29_4_0_U36 SOURCE ../dct_ref/dct.cpp:23 VARIABLE add_ln23_26 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_17s_13ns_29s_29_4_0_U37 SOURCE ../dct_ref/dct.cpp:23 VARIABLE add_ln23_27 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_17s_12ns_13ns_29_4_0_U38 SOURCE ../dct_ref/dct.cpp:23 VARIABLE add_ln23_28 LOOP {} BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true}} AREA {DSP 28 BRAM 0 URAM 0}} dct_Pipeline_WR_Loop_Row {BINDINFO {{BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln77_fu_223_p2 SOURCE ../dct_ref/dct.cpp:77 VARIABLE icmp_ln77 LOOP WR_Loop_Row BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln77_fu_229_p2 SOURCE ../dct_ref/dct.cpp:77 VARIABLE add_ln77 LOOP WR_Loop_Row BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln77_1_fu_251_p2 SOURCE ../dct_ref/dct.cpp:77 VARIABLE icmp_ln77_1 LOOP WR_Loop_Row BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME select_ln77_fu_313_p3 SOURCE ../dct_ref/dct.cpp:77 VARIABLE select_ln77 LOOP WR_Loop_Row BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false}} AREA {DSP 0 BRAM 0 URAM 0}} dct {BINDINFO {{BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_s2p PRAGMA {} RTLNAME buf_2d_in_U SOURCE ../dct_ref/dct.cpp:87 VARIABLE buf_2d_in LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {16 8 1} STORAGEUSAGE {ram_s2p array} DISPNAME {bind_storage ram_s2p} VISIBLE true} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_s2p PRAGMA {} RTLNAME buf_2d_in_1_U SOURCE ../dct_ref/dct.cpp:87 VARIABLE buf_2d_in_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {16 8 1} STORAGEUSAGE {ram_s2p array} DISPNAME {bind_storage ram_s2p} VISIBLE true} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_s2p PRAGMA {} RTLNAME buf_2d_in_2_U SOURCE ../dct_ref/dct.cpp:87 VARIABLE buf_2d_in_2 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {16 8 1} STORAGEUSAGE {ram_s2p array} DISPNAME {bind_storage ram_s2p} VISIBLE true} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_s2p PRAGMA {} RTLNAME buf_2d_in_3_U SOURCE ../dct_ref/dct.cpp:87 VARIABLE buf_2d_in_3 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {16 8 1} STORAGEUSAGE {ram_s2p array} DISPNAME {bind_storage ram_s2p} VISIBLE true} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_s2p PRAGMA {} RTLNAME buf_2d_in_4_U SOURCE ../dct_ref/dct.cpp:87 VARIABLE buf_2d_in_4 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {16 8 1} STORAGEUSAGE {ram_s2p array} DISPNAME {bind_storage ram_s2p} VISIBLE true} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_s2p PRAGMA {} RTLNAME buf_2d_in_5_U SOURCE ../dct_ref/dct.cpp:87 VARIABLE buf_2d_in_5 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {16 8 1} STORAGEUSAGE {ram_s2p array} DISPNAME {bind_storage ram_s2p} VISIBLE true} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_s2p PRAGMA {} RTLNAME buf_2d_in_6_U SOURCE ../dct_ref/dct.cpp:87 VARIABLE buf_2d_in_6 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {16 8 1} STORAGEUSAGE {ram_s2p array} DISPNAME {bind_storage ram_s2p} VISIBLE true} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_s2p PRAGMA {} RTLNAME buf_2d_in_7_U SOURCE ../dct_ref/dct.cpp:87 VARIABLE buf_2d_in_7 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {16 8 1} STORAGEUSAGE {ram_s2p array} DISPNAME {bind_storage ram_s2p} VISIBLE true} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_t2p PRAGMA {} RTLNAME buf_2d_out_U SOURCE ../dct_ref/dct.cpp:88 VARIABLE buf_2d_out LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {16 8 1} STORAGEUSAGE {ram_t2p array} DISPNAME {bind_storage ram_t2p} VISIBLE true} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_t2p PRAGMA {} RTLNAME buf_2d_out_1_U SOURCE ../dct_ref/dct.cpp:88 VARIABLE buf_2d_out_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {16 8 1} STORAGEUSAGE {ram_t2p array} DISPNAME {bind_storage ram_t2p} VISIBLE true} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_t2p PRAGMA {} RTLNAME buf_2d_out_2_U SOURCE ../dct_ref/dct.cpp:88 VARIABLE buf_2d_out_2 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {16 8 1} STORAGEUSAGE {ram_t2p array} DISPNAME {bind_storage ram_t2p} VISIBLE true} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_t2p PRAGMA {} RTLNAME buf_2d_out_3_U SOURCE ../dct_ref/dct.cpp:88 VARIABLE buf_2d_out_3 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {16 8 1} STORAGEUSAGE {ram_t2p array} DISPNAME {bind_storage ram_t2p} VISIBLE true} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_t2p PRAGMA {} RTLNAME buf_2d_out_4_U SOURCE ../dct_ref/dct.cpp:88 VARIABLE buf_2d_out_4 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {16 8 1} STORAGEUSAGE {ram_t2p array} DISPNAME {bind_storage ram_t2p} VISIBLE true} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_t2p PRAGMA {} RTLNAME buf_2d_out_5_U SOURCE ../dct_ref/dct.cpp:88 VARIABLE buf_2d_out_5 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {16 8 1} STORAGEUSAGE {ram_t2p array} DISPNAME {bind_storage ram_t2p} VISIBLE true} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_t2p PRAGMA {} RTLNAME buf_2d_out_6_U SOURCE ../dct_ref/dct.cpp:88 VARIABLE buf_2d_out_6 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {16 8 1} STORAGEUSAGE {ram_t2p array} DISPNAME {bind_storage ram_t2p} VISIBLE true} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_t2p PRAGMA {} RTLNAME buf_2d_out_7_U SOURCE ../dct_ref/dct.cpp:88 VARIABLE buf_2d_out_7 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {16 8 1} STORAGEUSAGE {ram_t2p array} DISPNAME {bind_storage ram_t2p} VISIBLE true}} AREA {DSP 112 BRAM 58 URAM 0}} dct_2d {AREA {DSP 112 BRAM 0 URAM 0}}}}'
+INFO-FLOW: DBG:PUTS:      update_csynth_reports json2rpt_hw_sw_interfaces
+Execute       send_msg_by_id INFO @200-1603@%s  
+INFO: [HLS 200-1603] Design has inferred MAXI bursts, see Vitis HLS GUI synthesis summary report for detailed information.
+INFO-FLOW: Running: gen_csynth_sec_pragma
+INFO-FLOW: DBG:PRAGMA:  Found gen_csynth_sec_pragma data problems (4):
+INFO-FLOW: DBG:PRAGMA:      Found duplicate AUTOMATION_VERBOSE_* messages with location ../dct_ref/dct.cpp:31:0: msg_groups AUTOMATION_VERBOSE_PASSED msg_id 214-335 msg_severity INFO msg_loc ../dct_ref/dct.cpp:31:13 msg_body {array_partition dim=2 type=complete  variable=row_outbuf 1 dct_2d ../dct_ref/dct.cpp:31:13 ../dct_ref/dct.cpp:30:9row_outbuf}
+INFO-FLOW: DBG:PRAGMA:      Found duplicate AUTOMATION_VERBOSE_* messages with location ../dct_ref/dct.cpp:32:0: msg_groups AUTOMATION_VERBOSE_PASSED msg_id 214-335 msg_severity INFO msg_loc ../dct_ref/dct.cpp:32:33 msg_body {array_partition dim=2 type=complete  variable=col_inbuf 1 dct_2d ../dct_ref/dct.cpp:32:33 ../dct_ref/dct.cpp:30:9col_inbuf}
+INFO-FLOW: DBG:PRAGMA:      Found duplicate AUTOMATION_VERBOSE_* messages with location ../dct_ref/dct.cpp:32:0: msg_groups AUTOMATION_VERBOSE_PASSED msg_id 214-335 msg_severity INFO msg_loc ../dct_ref/dct.cpp:32:15 msg_body {array_partition dim=1 type=cyclic factor=2 variable=col_outbuf 1 dct_2d ../dct_ref/dct.cpp:32:15 ../dct_ref/dct.cpp:30:9col_outbuf}
+INFO-FLOW: DBG:PRAGMA:      Found duplicate AUTOMATION_VERBOSE_* messages with location ../dct_ref/dct.cpp:32:0: msg_groups AUTOMATION_VERBOSE_PASSED msg_id 214-335 msg_severity INFO msg_loc ../dct_ref/dct.cpp:32:15 msg_body {array_partition dim=2 type=complete  variable=col_outbuf 1 dct_2d ../dct_ref/dct.cpp:32:15 ../dct_ref/dct.cpp:30:9col_outbuf}
+INFO-FLOW: Done: gen_csynth_sec_pragma time: 0 seconds per iteration
+INFO-FLOW: DBG:PUTS:      update_csynth_reports wrote xml
+INFO-FLOW: DBG:PUTS:      update_csynth_reports appended to csynth rpt file
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.689 seconds; current allocated memory: 346.641 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for dct.
+INFO: [VLOG 209-307] Generating Verilog RTL for dct.
+Execute       syn_report -model dct -printsummary 
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 142.05 MHz
+Command     autosyn done; 9.187 sec.
+Command   csynth_design done; 21.701 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 

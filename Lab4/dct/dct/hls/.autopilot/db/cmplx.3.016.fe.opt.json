@@ -1,0 +1,47 @@
+{
+  "0": {
+    "basicblocks": 11,
+    "calls": "1",
+    "file": "dct.cpp",
+    "fileloc": 84,
+    "instructions": 181,
+    "loads": {
+      "L": 8
+    },
+    "name": "dct",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 3559
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2",
+    "file": "dct.cpp",
+    "fileloc": 27,
+    "instructions": 738,
+    "loads": {
+      "L": 128
+    },
+    "name": "dct_2d",
+    "stores": {
+      "L": 128
+    },
+    "total_instructions": 3378
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "dct.cpp",
+    "fileloc": 8,
+    "instructions": 165,
+    "loads": {
+      "L": 8
+    },
+    "name": "dct_1d",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 165
+  }
+}

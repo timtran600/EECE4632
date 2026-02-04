@@ -1,0 +1,14 @@
+[
+  {
+    "directory": "C:\\Users\\tran.timo\\Documents\\ex\\example",
+    "arguments": [
+      "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\common\\technology\\autopilot",
+      "",
+      "-c",
+      "C:/Users/tran.timo/Downloads/axi_stream_tutorial/axi_stream_tutorial/example.cpp"
+    ],
+    "file": "C:/Users/tran.timo/Downloads/axi_stream_tutorial/axi_stream_tutorial/example.cpp"
+  }
+]

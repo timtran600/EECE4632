@@ -1,0 +1,80 @@
+<ENTRY>
+{
+ "thisFile": "C:/GitRepos\\EECE4632\\Lab4\\dct\\dct\\hls\\csim\\code_analyzer\\app.csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Thu Jan 29 19:41:29 2026",
+ "timestampMillis": "1769733689384",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [],
+  "toolVersion": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Thu Jan 29 19:41:29 2026",
+ "timestampMillis": "1769733689384",
+ "buildStep": {
+  "cmdId": "6a886bfe-fd74-11f0-8f4f-c37454bcb32d",
+  "name": "vitis_c++",
+  "logFile": "",
+  "commandLine": "vitis_c++ code_analyzer",
+  "args": [
+   "code_analyzer"
+  ],
+  "iniFiles": [],
+  "cwd": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 29 19:41:29 2026",
+ "timestampMillis": "1769733689385",
+ "status": {
+  "cmdId": "6a886bfe-fd74-11f0-8f4f-c37454bcb32d",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Jan 29 19:41:37 2026",
+ "timestampMillis": "1769733697362",
+ "status": {
+  "cmdId": "6a886bfe-fd74-11f0-8f4f-c37454bcb32d",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Jan 29 19:41:37 2026",
+ "timestampMillis": "1769733697362",
+ "report": {
+  "path": "C:\\GitRepos\\EECE4632\\Lab4\\dct",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "VCXX_CODE_ANALYZER",
+  "cmdId": "6a886bfe-fd74-11f0-8f4f-c37454bcb32d"
+ }
+}
+</ENTRY>

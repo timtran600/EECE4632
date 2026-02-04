@@ -1,0 +1,3 @@
+relativeroot=C:/GitRepos/EECE4632/Lab4/dct
+original_argv=-c --mode hls --config C:\GitRepos\EECE4632\Lab4\dct\hls_config.cfg --work_dir dct 
+

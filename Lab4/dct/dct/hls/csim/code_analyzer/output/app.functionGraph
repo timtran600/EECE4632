@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<callgraph:CallGraph xmlns:callgraph="http://www.xilinx.com/act/callgraph">
+  <DirectCall count="0" file="..\dct_ref\dct_test.cpp" id="112" line="35">
+    <caller function="_f206"/>
+    <callee function="_f226"/>
+  </DirectCall>
+  <DirectCall count="0" file="..\dct_ref\dct.cpp" id="396" line="37">
+    <caller function="_f220"/>
+    <callee function="_f219"/>
+  </DirectCall>
+  <DirectCall count="0" file="..\dct_ref\dct.cpp" id="475" line="48">
+    <caller function="_f220"/>
+    <callee function="_f219"/>
+  </DirectCall>
+  <DirectCall count="0" file="..\dct_ref\dct.cpp" id="687" line="90">
+    <caller function="_f226"/>
+    <callee function="_f227"/>
+  </DirectCall>
+  <DirectCall count="0" file="..\dct_ref\dct.cpp" id="691" line="92">
+    <caller function="_f226"/>
+    <callee function="_f228"/>
+  </DirectCall>
+  <DirectCall count="0" file="..\dct_ref\dct.cpp" id="695" line="96">
+    <caller function="_f226"/>
+    <callee function="_f229"/>
+  </DirectCall>
+  <DirectCall count="0" file="..\dct_ref\dct.cpp" id="800" line="37">
+    <caller function="_f228"/>
+    <callee function="_f230"/>
+  </DirectCall>
+  <DirectCall count="0" file="..\dct_ref\dct.cpp" id="879" line="48">
+    <caller function="_f228"/>
+    <callee function="_f230"/>
+  </DirectCall>
+  <Function file="..\dct_ref\dct_test.cpp" id="_f206" line="9" name="main"/>
+  <Function file="..\dct_ref\dct.cpp" id="_f219" line="8" name="dct_1d"/>
+  <Function file="..\dct_ref\dct.cpp" id="_f220" line="27" name="dct_2d"/>
+  <Function file="..\dct_ref\dct.cpp" id="_f221" line="58" name="read_data"/>
+  <Function file="..\dct_ref\dct.cpp" id="_f222" line="71" name="write_data"/>
+  <Function file="..\dct_ref\dct.cpp" id="_f226" line="83" name="dct"/>
+  <Function file="..\dct_ref\dct.cpp" id="_f227" line="58" name="read_data"/>
+  <Function file="..\dct_ref\dct.cpp" id="_f228" line="27" name="dct_2d"/>
+  <Function file="..\dct_ref\dct.cpp" id="_f229" line="71" name="write_data"/>
+  <Function file="..\dct_ref\dct.cpp" id="_f230" line="8" name="dct_1d"/>
+</callgraph:CallGraph>

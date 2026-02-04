@@ -1,0 +1,48 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'dct'" level="0">
+<item name = "Date">Thu Jan 29 20:29:34 2026
+</item>
+<item name = "Version">2024.1 (Build 5069499 on May 21 2024)</item>
+<item name = "Project">dct</item>
+<item name = "Solution">hls (Vitis Kernel Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu3eg-sfvc784-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">8.00 ns, 7.040 ns, 0.96 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">188, 188, 1.504 us, 1.504 us, 189, 189, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_dct_Pipeline_RD_Loop_Row_fu_159">dct_Pipeline_RD_Loop_Row, 11, 11, 88.000 ns, 88.000 ns, 9, 9, loop auto-rewind stp(delay=0 clock cycles(s))</column>
+<column name="grp_dct_2d_fu_174">dct_2d, 20, 20, 0.160 us, 0.160 us, 4, 4, yes</column>
+<column name="grp_dct_Pipeline_WR_Loop_Row_fu_194">dct_Pipeline_WR_Loop_Row, 11, 11, 88.000 ns, 88.000 ns, 9, 9, loop auto-rewind stp(delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

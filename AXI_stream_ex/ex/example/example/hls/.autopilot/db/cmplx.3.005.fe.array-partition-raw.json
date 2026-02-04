@@ -1,0 +1,17 @@
+{
+  "0": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "example.cpp",
+    "fileloc": 5,
+    "instructions": 108,
+    "loads": {
+      "L": 7
+    },
+    "name": "example",
+    "stores": {
+      "L": 7
+    },
+    "total_instructions": 108
+  }
+}

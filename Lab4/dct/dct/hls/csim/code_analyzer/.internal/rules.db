@@ -1,0 +1,227 @@
+{
+    "rules": {
+        "['C:\\\\GitRepos\\\\EECE4632\\\\Lab4\\\\dct\\\\dct\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\dct.cpp.0.bc', 'C:\\\\GitRepos\\\\EECE4632\\\\Lab4\\\\dct\\\\dct\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\dct.cpp.0.bc.d']": {
+            "command": [
+                "c:\\xilinx\\vitis_hls\\2024.1\\vcxx\\/libexec/clang.exe",
+                "-c",
+                "-emit-llvm",
+                "-MD",
+                "-MF",
+                "C:\\GitRepos\\EECE4632\\Lab4\\dct\\dct\\hls\\csim\\code_analyzer\\.internal\\build\\dct.cpp.0.bc.d",
+                "-fhls",
+                "-hls-syn-headers-dir=c:\\xilinx\\vitis_hls\\2024.1\\vcxx\\data\\autopilot",
+                "-vitis-hls=C:\\Xilinx\\Vitis_HLS\\2024.1",
+                "--sysroot=C:\\Xilinx\\Vitis_HLS\\2024.1\\tps\\mingw\\10.0.0\\win64.o\\nt",
+                "-fhlstoplevel=dct",
+                "-fslxtrace",
+                "../dct_ref/dct.cpp",
+                "-o",
+                "C:\\GitRepos\\EECE4632\\Lab4\\dct\\dct\\hls\\csim\\code_analyzer\\.internal\\build\\dct.cpp.0.bc"
+            ],
+            "exectime": 1.9822850227355957,
+            "cwd": "C:\\GitRepos\\EECE4632\\Lab4\\dct"
+        },
+        "['C:\\\\GitRepos\\\\EECE4632\\\\Lab4\\\\dct\\\\dct\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\dct_test.cpp.0.o', 'C:\\\\GitRepos\\\\EECE4632\\\\Lab4\\\\dct\\\\dct\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\dct_test.cpp.0.o.d']": {
+            "command": [
+                "c:\\xilinx\\vitis_hls\\2024.1\\vcxx\\/libexec/clang.exe",
+                "-c",
+                "-MD",
+                "-MF",
+                "C:\\GitRepos\\EECE4632\\Lab4\\dct\\dct\\hls\\csim\\code_analyzer\\.internal\\build\\dct_test.cpp.0.o.d",
+                "-fhls-tb",
+                "-hls-sim-headers-dir=c:\\xilinx\\vitis_hls\\2024.1\\vcxx\\data\\include",
+                "-vitis-hls=C:\\Xilinx\\Vitis_HLS\\2024.1",
+                "--sysroot=C:\\Xilinx\\Vitis_HLS\\2024.1\\tps\\mingw\\10.0.0\\win64.o\\nt",
+                "-fhlstoplevel=dct",
+                "-fslxskipfunctionbody",
+                "-fslxtrace",
+                "../dct_ref/dct_test.cpp",
+                "-o",
+                "C:\\GitRepos\\EECE4632\\Lab4\\dct\\dct\\hls\\csim\\code_analyzer\\.internal\\build\\dct_test.cpp.0.o"
+            ],
+            "exectime": 0.24953293800354004,
+            "cwd": "C:\\GitRepos\\EECE4632\\Lab4\\dct"
+        },
+        "['C:\\\\GitRepos\\\\EECE4632\\\\Lab4\\\\dct\\\\dct\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\dct.cpp.0.o', 'C:\\\\GitRepos\\\\EECE4632\\\\Lab4\\\\dct\\\\dct\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\dct.cpp.0.o.d']": {
+            "command": [
+                "c:\\xilinx\\vitis_hls\\2024.1\\vcxx\\/libexec/clang.exe",
+                "-c",
+                "-MD",
+                "-MF",
+                "C:\\GitRepos\\EECE4632\\Lab4\\dct\\dct\\hls\\csim\\code_analyzer\\.internal\\build\\dct.cpp.0.o.d",
+                "-fhls-tb",
+                "-hls-sim-headers-dir=c:\\xilinx\\vitis_hls\\2024.1\\vcxx\\data\\include",
+                "-vitis-hls=C:\\Xilinx\\Vitis_HLS\\2024.1",
+                "--sysroot=C:\\Xilinx\\Vitis_HLS\\2024.1\\tps\\mingw\\10.0.0\\win64.o\\nt",
+                "-fhlstoplevel=dct",
+                "-fslxskipfunctionbody",
+                "-fslxtrace",
+                "../dct_ref/dct.cpp",
+                "-o",
+                "C:\\GitRepos\\EECE4632\\Lab4\\dct\\dct\\hls\\csim\\code_analyzer\\.internal\\build\\dct.cpp.0.o"
+            ],
+            "exectime": 0.24108028411865234,
+            "cwd": "C:\\GitRepos\\EECE4632\\Lab4\\dct"
+        },
+        "['C:\\\\GitRepos\\\\EECE4632\\\\Lab4\\\\dct\\\\dct\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\syn_srcs.bc']": {
+            "command": [
+                "c:\\xilinx\\vitis_hls\\2024.1\\vcxx\\/libexec/llvm-link.exe",
+                "C:\\GitRepos\\EECE4632\\Lab4\\dct\\dct\\hls\\csim\\code_analyzer\\.internal\\build\\dct.cpp.0.bc",
+                "-o",
+                "C:\\GitRepos\\EECE4632\\Lab4\\dct\\dct\\hls\\csim\\code_analyzer\\.internal\\build\\syn_srcs.bc"
+            ],
+            "exectime": 0.18821239471435547,
+            "cwd": "C:\\GitRepos\\EECE4632\\Lab4\\dct"
+        },
+        "['C:\\\\GitRepos\\\\EECE4632\\\\Lab4\\\\dct\\\\dct\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\syn_srcs.opt.bc']": {
+            "command": [
+                "c:\\xilinx\\vitis_hls\\2024.1\\vcxx\\/libexec/opt.exe",
+                "-check-single-toplevel",
+                "-make-non-toplevel-internal",
+                "C:\\GitRepos\\EECE4632\\Lab4\\dct\\dct\\hls\\csim\\code_analyzer\\.internal\\build\\syn_srcs.bc",
+                "-o",
+                "C:\\GitRepos\\EECE4632\\Lab4\\dct\\dct\\hls\\csim\\code_analyzer\\.internal\\build\\syn_srcs.opt.bc"
+            ],
+            "exectime": 0.3193812370300293,
+            "cwd": "C:\\GitRepos\\EECE4632\\Lab4\\dct"
+        },
+        "['C:\\\\GitRepos\\\\EECE4632\\\\Lab4\\\\dct\\\\dct\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\app.exe']": {
+            "command": [
+                "c:\\xilinx\\vitis_hls\\2024.1\\vcxx\\/libexec/clang++.exe",
+                "-o",
+                "C:\\GitRepos\\EECE4632\\Lab4\\dct\\dct\\hls\\csim\\code_analyzer\\.internal\\build\\app.exe",
+                "C:\\GitRepos\\EECE4632\\Lab4\\dct\\dct\\hls\\csim\\code_analyzer\\.internal\\build\\dct_test.cpp.0.o",
+                "C:\\GitRepos\\EECE4632\\Lab4\\dct\\dct\\hls\\csim\\code_analyzer\\.internal\\build\\dct.cpp.0.o",
+                "C:\\GitRepos\\EECE4632\\Lab4\\dct\\dct\\hls\\csim\\code_analyzer\\.internal\\build\\syn_srcs.opt.bc",
+                "-fhls",
+                "-fhlstoplevel=dct",
+                "-vitis-hls=C:\\Xilinx\\Vitis_HLS\\2024.1",
+                "-fslxtrace",
+                "-Wl,-mllvm,-profilerOutputDirectory=C:\\GitRepos\\EECE4632\\Lab4\\dct\\dct\\hls\\csim\\code_analyzer\\.internal\\profiler\\0",
+                "-fslxpthreads",
+                "-lpthread",
+                "--sysroot=C:\\Xilinx\\Vitis_HLS\\2024.1\\tps\\mingw\\10.0.0\\win64.o\\nt"
+            ],
+            "exectime": 0.8910872936248779,
+            "cwd": "C:\\GitRepos\\EECE4632\\Lab4\\dct"
+        },
+        "['C:\\\\GitRepos\\\\EECE4632\\\\Lab4\\\\dct\\\\dct\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\instrument\\\\app_0\\\\binary_dependencies.json']": {
+            "command": [
+                "c:\\xilinx\\vitis_hls\\2024.1\\vcxx\\libexec\\clang-scan-deps.exe",
+                "--compilation-database=C:\\GitRepos\\EECE4632\\Lab4\\dct\\dct\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\compile_commands.json",
+                "--format=vitiscxx",
+                "--reuse-filemanager=false",
+                "--output=C:\\GitRepos\\EECE4632\\Lab4\\dct\\dct\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\binary_dependencies.json"
+            ],
+            "exectime": 0.394533634185791,
+            "cwd": "C:\\GitRepos\\EECE4632\\Lab4\\dct"
+        },
+        "['C:\\\\GitRepos\\\\EECE4632\\\\Lab4\\\\dct\\\\dct\\\\hls\\\\csim\\\\code_analyzer\\\\output\\\\app.functionGraph']": {
+            "command": [
+                "c:\\xilinx\\vitis_hls\\2024.1\\vcxx\\/libexec/staticCallGraph.exe",
+                "-i",
+                "C:\\GitRepos\\EECE4632\\Lab4\\dct\\dct\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\static.xml",
+                "-o",
+                "C:\\GitRepos\\EECE4632\\Lab4\\dct\\dct\\hls\\csim\\code_analyzer\\output\\app.functionGraph"
+            ],
+            "exectime": 0.24327945709228516,
+            "cwd": "C:\\GitRepos\\EECE4632\\Lab4\\dct"
+        },
+        "['C:\\\\GitRepos\\\\EECE4632\\\\Lab4\\\\dct\\\\dct\\\\hls\\\\csim\\\\code_analyzer\\\\output\\\\app.functionMapping']": {
+            "command": [
+                "c:\\xilinx\\vitis_hls\\2024.1\\vcxx\\/libexec/functionMapper.exe",
+                "--static-xml",
+                "C:\\GitRepos\\EECE4632\\Lab4\\dct\\dct\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\static.xml",
+                "--function-mapping",
+                "C:\\GitRepos\\EECE4632\\Lab4\\dct\\dct\\hls\\csim\\code_analyzer\\output\\app.functionMapping",
+                "--ir-module",
+                "C:\\GitRepos\\EECE4632\\Lab4\\dct\\dct\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\project.symbols.bc",
+                "--fn",
+                "226"
+            ],
+            "exectime": 0.24881720542907715,
+            "cwd": "C:\\GitRepos\\EECE4632\\Lab4\\dct"
+        },
+        "['C:\\\\GitRepos\\\\EECE4632\\\\Lab4\\\\dct\\\\dct\\\\hls\\\\csim\\\\code_analyzer\\\\bin\\\\.tracing_stdout.txt', 'C:\\\\GitRepos\\\\EECE4632\\\\Lab4\\\\dct\\\\dct\\\\hls\\\\csim\\\\code_analyzer\\\\bin\\\\.tracing_stderr.txt']": {
+            "command": [
+                "C:\\GitRepos\\EECE4632\\Lab4\\dct\\dct\\hls\\csim\\code_analyzer\\.internal\\build\\app.exe"
+            ],
+            "exectime": 1.7333850860595703,
+            "cwd": "C:\\GitRepos\\EECE4632\\Lab4\\dct\\dct\\hls\\csim\\code_analyzer\\tracing\\csim\\build"
+        },
+        "['C:\\\\GitRepos\\\\EECE4632\\\\Lab4\\\\dct\\\\dct\\\\hls\\\\csim\\\\code_analyzer\\\\output\\\\reduced_programmodel.app']": {
+            "command": [
+                "c:\\xilinx\\vitis_hls\\2024.1\\vcxx\\/libexec/optimizer.exe",
+                "-DFGPass",
+                "-appName=app",
+                "-outputDir",
+                "C:\\GitRepos\\EECE4632\\Lab4\\dct\\dct\\hls\\csim\\code_analyzer\\output",
+                "-logDir",
+                "C:\\GitRepos\\EECE4632\\Lab4\\dct\\dct\\hls\\csim\\code_analyzer\\log",
+                "-pmout=C:\\GitRepos\\EECE4632\\Lab4\\dct\\dct\\hls\\csim\\code_analyzer\\output\\reduced_programmodel.app",
+                "C:\\GitRepos\\EECE4632\\Lab4\\dct\\dct\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\project.symbols.bc",
+                "-staticFile",
+                "C:\\GitRepos\\EECE4632\\Lab4\\dct\\dct\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\static.xml",
+                "-traceFile",
+                "C:\\GitRepos\\EECE4632\\Lab4\\dct\\dct\\hls\\csim\\code_analyzer\\.internal\\profiler\\0\\app_0_0\\thread0000-trace.txt",
+                "-o",
+                "nul"
+            ],
+            "exectime": 0.3756749629974365,
+            "cwd": "C:\\GitRepos\\EECE4632\\Lab4\\dct"
+        },
+        "['C:\\\\GitRepos\\\\EECE4632\\\\Lab4\\\\dct\\\\dct\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\dataflow\\\\0\\\\taskgraph.json']": {
+            "command": [
+                "c:\\xilinx\\vitis_hls\\2024.1\\vcxx\\/libexec/parallelismSelector.exe",
+                "-g",
+                "C:\\GitRepos\\EECE4632\\Lab4\\dct\\dct\\hls\\csim\\code_analyzer\\output\\reduced_programmodel.app",
+                "--basepath",
+                "C:\\GitRepos\\EECE4632\\Lab4\\dct",
+                "--static-xml",
+                "C:\\GitRepos\\EECE4632\\Lab4\\dct\\dct\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\static.xml",
+                "--fpga-part",
+                "xczu3eg-sfvc784-2-e",
+                "--device-totals",
+                "c:\\xilinx\\vitis_hls\\2024.1\\vcxx\\data\\platform\\logic\\fpga.devicetotals",
+                "--clock-frequency",
+                "125.0",
+                "--out-dir",
+                "C:\\GitRepos\\EECE4632\\Lab4\\dct\\dct\\hls\\csim\\code_analyzer\\output",
+                "--log-dir",
+                "C:\\GitRepos\\EECE4632\\Lab4\\dct\\dct\\hls\\csim\\code_analyzer\\log",
+                "--mapping",
+                "C:\\GitRepos\\EECE4632\\Lab4\\dct\\dct\\hls\\csim\\code_analyzer\\output\\app.functionMapping",
+                "--objective",
+                "none",
+                "--performance-target",
+                "target_both",
+                "--max-array-optimization-factor",
+                "1024",
+                "--complete-partition-limit",
+                "4",
+                "--lut-constraint",
+                "100.0",
+                "--ff-constraint",
+                "100.0",
+                "--dsp-constraint",
+                "100.0",
+                "--bram-constraint",
+                "100.0",
+                "--uram-constraint",
+                "100.0",
+                "--ir-module",
+                "C:\\GitRepos\\EECE4632\\Lab4\\dct\\dct\\hls\\csim\\code_analyzer\\.internal\\instrument\\app_0\\project.symbols.bc",
+                "--max-iterations",
+                "1000",
+                "--max-iterations-branch-full-log",
+                "20",
+                "--df-id",
+                "0",
+                "--df-target",
+                "%F226"
+            ],
+            "exectime": 0.8875100612640381,
+            "cwd": "C:\\GitRepos\\EECE4632\\Lab4\\dct"
+        }
+    }
+}

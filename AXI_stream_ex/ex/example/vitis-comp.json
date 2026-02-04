@@ -1,0 +1,11 @@
+{
+  "name": "example",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "example.cfg"
+    ],
+    "work_dir": "example"
+  }
+}
