@@ -1,0 +1,3 @@
+relativeroot=C:/GitRepos/EECE4632/HW5/Vitis/divby13_stream
+original_argv=--mode hls --csim --config C:\GitRepos\EECE4632\HW5\Vitis\divby13_stream\divby13_stream.cfg --work_dir divby13_stream 
+
