@@ -3,6 +3,7 @@
   "mapping": {
     "divby13_stream\\divby13_stream": "divby13_stream",
     "divby13_stream\\divby13_stream.cpp": "divby13_stream",
-    "divby13_stream\\divby13_streamcpp": "divby13_stream"
+    "divby13_stream\\divby13_streamcpp": "divby13_stream",
+    "divby13_stream\\divby13_stream_tb.cpp": "divby13_stream"
   }
 }

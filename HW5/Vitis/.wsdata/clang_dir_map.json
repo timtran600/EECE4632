@@ -1,0 +1,7 @@
+{
+  "workspaceRoot": "C:\\GitRepos\\EECE4632\\HW5\\Vitis",
+  "mapping": {
+    "C:\\GitRepos\\EECE4632\\HW4\\Vitis\\divby13_stream\\divby13_stream.cpp": "divby13_stream",
+    "divby13_stream\\divby13_stream_tb.cpp": "divby13_stream"
+  }
+}

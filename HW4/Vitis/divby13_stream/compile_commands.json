@@ -10,5 +10,17 @@
       "C:\\GitRepos\\EECE4632\\HW4\\Vitis\\divby13_stream\\divby13_stream.cpp"
     ],
     "file": "C:\\GitRepos\\EECE4632\\HW4\\Vitis\\divby13_stream\\divby13_stream.cpp"
+  },
+  {
+    "directory": "C:\\GitRepos\\EECE4632\\HW4\\Vitis\\divby13_stream",
+    "arguments": [
+      "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\include",
+      "",
+      "-c",
+      "C:\\GitRepos\\EECE4632\\HW4\\Vitis\\divby13_stream\\divby13_stream_tb.cpp"
+    ],
+    "file": "C:\\GitRepos\\EECE4632\\HW4\\Vitis\\divby13_stream\\divby13_stream_tb.cpp"
   }
 ]

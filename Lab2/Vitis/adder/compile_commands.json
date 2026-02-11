@@ -1,14 +1,14 @@
 [
   {
-    "directory": "C:\\Users\\tran.timo\\Documents\\labs\\adder",
+    "directory": "C:\\GitRepos\\EECE4632\\Lab2\\Vitis\\adder",
     "arguments": [
       "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
       "-fhls",
       "-hls-syn-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\common\\technology\\autopilot",
       "",
       "-c",
-      "C:\\Users\\tran.timo\\Documents\\labs\\adder\\adder.cpp"
+      "C:\\GitRepos\\EECE4632\\Lab2\\Vitis\\adder\\adder.cpp"
     ],
-    "file": "C:\\Users\\tran.timo\\Documents\\labs\\adder\\adder.cpp"
+    "file": "C:\\GitRepos\\EECE4632\\Lab2\\Vitis\\adder\\adder.cpp"
   }
 ]

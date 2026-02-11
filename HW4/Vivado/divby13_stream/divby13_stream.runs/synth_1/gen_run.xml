@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xczu3eg-sfvc784-2-e" LaunchTime="1770191461">
   <File Type="PA-TCL" Name="divby13_stream_wrapper.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="divby13_stream_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="divby13_stream_wrapper_reports.tcl"/>
   <File Type="RDS-RDS" Name="divby13_stream_wrapper.vds"/>
   <File Type="RDS-UTIL" Name="divby13_stream_wrapper_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="divby13_stream_wrapper_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="divby13_stream_wrapper.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="divby13_stream_wrapper_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="divby13_stream_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/divby13_stream/divby13_stream.bd">
@@ -44,17 +41,15 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="divby13_stream_auto_pc_0"/>
   <BlockFileSet Type="BlockSrcs" Name="divby13_stream_zynq_ultra_ps_e_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="divby13_stream_auto_pc_0"/>
   <BlockFileSet Type="BlockSrcs" Name="divby13_stream_xbar_3"/>
-  <BlockFileSet Type="BlockSrcs" Name="divby13_stream_auto_us_0"/>
   <BlockFileSet Type="BlockSrcs" Name="divby13_stream_rst_ps7_0_100M_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="divby13_stream_divby13_stream_0_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="divby13_stream_auto_us_0"/>
   <BlockFileSet Type="BlockSrcs" Name="divby13_stream_axi_dma_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="divby13_stream_divby13_stream_0_2"/>
   <BlockFileSet Type="BlockSrcs" Name="divby13_stream_auto_ds_0"/>
 </GenRun>

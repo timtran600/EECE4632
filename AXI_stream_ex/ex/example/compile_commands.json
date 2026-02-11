@@ -1,6 +1,6 @@
 [
   {
-    "directory": "C:\\Users\\tran.timo\\Documents\\ex\\example",
+    "directory": "C:\\GitRepos\\EECE4632\\AXI_stream_ex\\ex\\example",
     "arguments": [
       "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
       "-fhls",
