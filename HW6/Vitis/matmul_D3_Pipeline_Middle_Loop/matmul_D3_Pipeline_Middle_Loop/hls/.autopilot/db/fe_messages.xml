@@ -1,0 +1,39 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="mmult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=mmult_hw" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mmult_baseline.cpp:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mmult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi depth=16384 port=in1" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mmult_baseline.cpp:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mmult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi depth=16384 port=in2" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mmult_baseline.cpp:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mmult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi depth=16384 port=out" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mmult_baseline.cpp:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mmult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=dim bundle=CTRL" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mmult_baseline.cpp:13:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mmult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=CTRL" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mmult_baseline.cpp:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mmult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=128 max=128 avg=128" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mmult_baseline.cpp:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mmult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=128 max=128 avg=128" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mmult_baseline.cpp:19:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mmult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mmult_baseline.cpp:21:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mmult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=128 max=128 avg=128" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="mmult_baseline.cpp:20:8" msg_body="Loop 'loop3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="loop3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-187" msg_severity="WARNING" msg_loc="mmult_baseline.cpp:20:8" msg_body="Cannot unroll loop 'loop3' (mmult_baseline.cpp:20:8) in function 'mmult_hw' as it has a variable trip count">
+        <args LoopLoc="mmult_baseline.cpp:20:8" LoopName="loop3"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

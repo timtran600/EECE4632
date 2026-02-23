@@ -1,0 +1,26 @@
+[
+  {
+    "directory": "C:\\GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D2_Pipeline_Inner_Loop",
+    "arguments": [
+      "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\common\\technology\\autopilot",
+      "",
+      "-c",
+      "C:\\GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D2_Pipeline_Inner_Loop\\mmult_baseline.cpp"
+    ],
+    "file": "C:\\GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D2_Pipeline_Inner_Loop\\mmult_baseline.cpp"
+  },
+  {
+    "directory": "C:\\GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D2_Pipeline_Inner_Loop",
+    "arguments": [
+      "C:\\Xilinx\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\Xilinx\\Vitis_HLS\\2024.1\\include",
+      "",
+      "-c",
+      "C:\\GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D2_Pipeline_Inner_Loop\\mmult_tb.cpp"
+    ],
+    "file": "C:\\GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D2_Pipeline_Inner_Loop\\mmult_tb.cpp"
+  }
+]

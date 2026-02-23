@@ -1,0 +1,3 @@
+relativeroot=C:/GitRepos/EECE4632/HW6/Vitis/matmul_D8_AXISep_MP_IU
+original_argv=-c --mode hls --config C:\GitRepos\EECE4632\HW6\Vitis\matmul_D8_AXISep_MP_IU\matmul.cfg --work_dir matmul_D8_AXISep_MP_IU 
+

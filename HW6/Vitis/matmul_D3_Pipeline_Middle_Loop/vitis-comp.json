@@ -1,0 +1,11 @@
+{
+  "name": "matmul_D3_Pipeline_Middle_Loop",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "matmul.cfg"
+    ],
+    "work_dir": "matmul_D3_Pipeline_Middle_Loop"
+  }
+}

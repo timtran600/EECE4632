@@ -1,0 +1,3 @@
+relativeroot=C:/GitRepos/EECE4632/HW6/Vitis/matmul
+original_argv=--mode hls --csim --config C:\GitRepos\EECE4632\HW6\Vitis\matmul\matmul.cfg --work_dir matmul 
+

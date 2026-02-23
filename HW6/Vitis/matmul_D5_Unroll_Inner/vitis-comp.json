@@ -1,0 +1,11 @@
+{
+  "name": "matmul_D5_Unroll_Inner",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "matmul.cfg"
+    ],
+    "work_dir": "matmul_D5_Unroll_Inner"
+  }
+}

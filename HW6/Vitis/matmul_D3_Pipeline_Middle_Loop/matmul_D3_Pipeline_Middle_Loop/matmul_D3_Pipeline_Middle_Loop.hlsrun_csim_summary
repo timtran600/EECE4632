@@ -1,0 +1,157 @@
+<ENTRY>
+{
+ "thisFile": "C:/GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D3_Pipeline_Middle_Loop\\matmul_D3_Pipeline_Middle_Loop\\matmul_D3_Pipeline_Middle_Loop.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "02/18/26 15:48:44",
+ "timestampMillis": "1921199034",
+ "buildStep": {
+  "cmdId": "a1683e2d-d141-46d8-bbd0-80681d3ca950",
+  "name": "vitis-run",
+  "logFile": "C:/GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D3_Pipeline_Middle_Loop\\matmul_D3_Pipeline_Middle_Loop\\logs\\matmul_D3_Pipeline_Middle_Loop.steps.log",
+  "commandLine": "C:/Xilinx/Vitis/2024.1/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D3_Pipeline_Middle_Loop\\matmul.cfg --work_dir matmul_D3_Pipeline_Middle_Loop ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "C:\\GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D3_Pipeline_Middle_Loop\\matmul.cfg",
+   "--work_dir",
+   "matmul_D3_Pipeline_Middle_Loop"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D3_Pipeline_Middle_Loop"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/18/26 15:48:44",
+ "timestampMillis": "1921199034",
+ "status": {
+  "cmdId": "a1683e2d-d141-46d8-bbd0-80681d3ca950",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "02/18/26 15:48:48",
+ "timestampMillis": "1921202596",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "mmult_hw",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D3_Pipeline_Middle_Loop\\mmult_baseline.cpp",
+     "C:/GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D3_Pipeline_Middle_Loop\\mmult_baseline.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "02/18/26 15:48:48",
+ "timestampMillis": "1921202597",
+ "buildStep": {
+  "cmdId": "22e825b8-c583-4c33-ae6f-0c4349c1d45d",
+  "name": "csim_design",
+  "logFile": "C:/GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D3_Pipeline_Middle_Loop\\matmul_D3_Pipeline_Middle_Loop\\hls\\hls.log",
+  "commandLine": "csim_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D3_Pipeline_Middle_Loop"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/18/26 15:48:48",
+ "timestampMillis": "1921202598",
+ "status": {
+  "cmdId": "22e825b8-c583-4c33-ae6f-0c4349c1d45d",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/18/26 15:48:49",
+ "timestampMillis": "1921203742",
+ "status": {
+  "cmdId": "22e825b8-c583-4c33-ae6f-0c4349c1d45d",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/18/26 15:48:49",
+ "timestampMillis": "1921203880",
+ "status": {
+  "cmdId": "a1683e2d-d141-46d8-bbd0-80681d3ca950",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/18/26 15:48:49",
+ "timestampMillis": "1921203880",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/18/26 15:48:49",
+ "timestampMillis": "1921203880",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

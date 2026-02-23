@@ -1,0 +1,157 @@
+<ENTRY>
+{
+ "thisFile": "C:/GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D6_AXI_Separation\\matmul_D6_AXI_Separation\\matmul_D6_AXI_Separation.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "02/18/26 16:25:06",
+ "timestampMillis": "1923380896",
+ "buildStep": {
+  "cmdId": "5b479761-659b-4475-8c75-f7b1b968c4ff",
+  "name": "vitis-run",
+  "logFile": "C:/GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D6_AXI_Separation\\matmul_D6_AXI_Separation\\logs\\matmul_D6_AXI_Separation.steps.log",
+  "commandLine": "C:/Xilinx/Vitis/2024.1/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D6_AXI_Separation\\matmul.cfg --work_dir matmul_D6_AXI_Separation ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "C:\\GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D6_AXI_Separation\\matmul.cfg",
+   "--work_dir",
+   "matmul_D6_AXI_Separation"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D6_AXI_Separation"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/18/26 16:25:06",
+ "timestampMillis": "1923380897",
+ "status": {
+  "cmdId": "5b479761-659b-4475-8c75-f7b1b968c4ff",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "02/18/26 16:25:10",
+ "timestampMillis": "1923384404",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "mmult_hw",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D6_AXI_Separation\\mmult_baseline.cpp",
+     "C:/GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D6_AXI_Separation\\mmult_baseline.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "02/18/26 16:25:10",
+ "timestampMillis": "1923384405",
+ "buildStep": {
+  "cmdId": "238d2a53-5023-4d44-b35a-366a32735cee",
+  "name": "csim_design",
+  "logFile": "C:/GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D6_AXI_Separation\\matmul_D6_AXI_Separation\\hls\\hls.log",
+  "commandLine": "csim_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D6_AXI_Separation"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/18/26 16:25:10",
+ "timestampMillis": "1923384406",
+ "status": {
+  "cmdId": "238d2a53-5023-4d44-b35a-366a32735cee",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/18/26 16:25:11",
+ "timestampMillis": "1923385122",
+ "status": {
+  "cmdId": "238d2a53-5023-4d44-b35a-366a32735cee",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/18/26 16:25:11",
+ "timestampMillis": "1923385254",
+ "status": {
+  "cmdId": "5b479761-659b-4475-8c75-f7b1b968c4ff",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/18/26 16:25:11",
+ "timestampMillis": "1923385255",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/18/26 16:25:11",
+ "timestampMillis": "1923385255",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

@@ -1,0 +1,11 @@
+{
+  "name": "matmul_D12_Tiled_AP",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "matmul.cfg"
+    ],
+    "work_dir": "matmul_D12_Tiled_AP"
+  }
+}

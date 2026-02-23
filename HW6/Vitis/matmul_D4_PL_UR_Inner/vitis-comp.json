@@ -1,0 +1,11 @@
+{
+  "name": "matmul_D4_PL_UR_Inner",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "matmul.cfg"
+    ],
+    "work_dir": "matmul_D4_PL_UR_Inner"
+  }
+}

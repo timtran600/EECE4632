@@ -1,0 +1,55 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'mmult_hw'" level="0">
+<item name = "Date">Mon Feb 23 03:01:00 2026
+</item>
+<item name = "Version">2024.1 (Build 5069499 on May 21 2024)</item>
+<item name = "Project">matmul_D13_Tiled_FullAP</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu3eg-sbva484-1-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">3338065, 3338065, 33.381 ms, 33.381 ms, 3338066, 3338066, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_mmult_hw_Pipeline_init_i_init_j_fu_2020">mmult_hw_Pipeline_init_i_init_j, 258, 258, 2.580 us, 2.580 us, 257, 257, loop auto-rewind stp(delay=0 clock cycles(s))</column>
+<column name="grp_mmult_hw_Pipeline_load_a_VITIS_LOOP_27_1_fu_2040">mmult_hw_Pipeline_load_a_VITIS_LOOP_27_1, 268, 268, 2.680 us, 2.680 us, 257, 257, loop auto-rewind stp(delay=0 clock cycles(s))</column>
+<column name="grp_mmult_hw_Pipeline_load_b_VITIS_LOOP_30_2_fu_2066">mmult_hw_Pipeline_load_b_VITIS_LOOP_30_2, 268, 268, 2.680 us, 2.680 us, 257, 257, loop auto-rewind stp(delay=0 clock cycles(s))</column>
+<column name="grp_mmult_hw_Pipeline_store_i_store_j_fu_2092">mmult_hw_Pipeline_store_i_store_j, 265, 265, 2.650 us, 2.650 us, 257, 257, loop auto-rewind stp(delay=0 clock cycles(s))</column>
+<column name="grp_mmult_hw_Pipeline_comp_k_fu_2118">mmult_hw_Pipeline_comp_k, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp(delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- tile_i">3338064, 3338064, 417258, -, -, 8, no</column>
+<column name=" + tile_j">417256, 417256, 52157, -, -, 8, no</column>
+<column name="  ++ tile_k">51896, 51896, 6487, -, -, 8, no</column>
+<column name="   +++ comp_i">5680, 5680, 355, -, -, 16, no</column>
+<column name="    ++++ comp_j">352, 352, 22, -, -, 16, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

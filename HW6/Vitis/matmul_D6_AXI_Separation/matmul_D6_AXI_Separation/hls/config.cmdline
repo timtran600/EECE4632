@@ -1,0 +1,3 @@
+relativeroot=C:/GitRepos/EECE4632/HW6/Vitis/matmul_D6_AXI_Separation
+original_argv=--mode hls --csim --config C:\GitRepos\EECE4632\HW6\Vitis\matmul_D6_AXI_Separation\matmul.cfg --work_dir matmul_D6_AXI_Separation 
+

@@ -1,0 +1,11 @@
+{
+  "name": "matmul",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "matmul.cfg"
+    ],
+    "work_dir": "matmul"
+  }
+}

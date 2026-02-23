@@ -1,0 +1,11 @@
+{
+  "name": "matmul_D9_AXISep_Copy_Opt",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "matmul.cfg"
+    ],
+    "work_dir": "matmul_D9_AXISep_Copy_Opt"
+  }
+}

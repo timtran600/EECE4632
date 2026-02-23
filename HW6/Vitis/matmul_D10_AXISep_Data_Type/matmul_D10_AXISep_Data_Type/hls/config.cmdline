@@ -1,0 +1,3 @@
+relativeroot=C:/GitRepos/EECE4632/HW6/Vitis/matmul_D10_AXISep_Data_Type
+original_argv=-c --mode hls --config C:\GitRepos\EECE4632\HW6\Vitis\matmul_D10_AXISep_Data_Type\matmul.cfg --work_dir matmul_D10_AXISep_Data_Type 
+

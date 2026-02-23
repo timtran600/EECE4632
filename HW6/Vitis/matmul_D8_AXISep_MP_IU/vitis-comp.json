@@ -1,0 +1,11 @@
+{
+  "name": "matmul_D8_AXISep_MP_IU",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "matmul.cfg"
+    ],
+    "work_dir": "matmul_D8_AXISep_MP_IU"
+  }
+}

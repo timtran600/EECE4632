@@ -1,0 +1,11 @@
+{
+  "name": "matmul_D2_Pipeline_Inner_Loop",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "matmul.cfg"
+    ],
+    "work_dir": "matmul_D2_Pipeline_Inner_Loop"
+  }
+}

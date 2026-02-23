@@ -1,0 +1,246 @@
+<ENTRY>
+{
+ "thisFile": "C:/GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D12_Tiled_AP\\matmul_D12_Tiled_AP\\matmul_D12_Tiled_AP.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "02/23/26 00:37:31",
+ "timestampMillis": "2298525381",
+ "buildStep": {
+  "cmdId": "bdec9c99-37f2-46ae-832f-0be8d5bc7050",
+  "name": "v++",
+  "logFile": "C:/GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D12_Tiled_AP\\matmul_D12_Tiled_AP\\logs\\matmul_D12_Tiled_AP.steps.log",
+  "commandLine": "C:/Xilinx/Vitis/2024.1/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config C:\\GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D12_Tiled_AP\\matmul.cfg --work_dir matmul_D12_Tiled_AP ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "C:\\GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D12_Tiled_AP\\matmul.cfg",
+   "--work_dir",
+   "matmul_D12_Tiled_AP"
+  ],
+  "iniFiles": [
+   {
+    "path": "C:/GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D12_Tiled_AP\\matmul.cfg",
+    "content": "part=xczu3eg-sbva484-1-e\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\nsyn.file=mmult_baseline.cpp\nsyn.file=mmult_baseline.h\ntb.file=mmult_tb.cpp\nsyn.top=mmult_hw"
+   }
+  ],
+  "cwd": "C:\\GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D12_Tiled_AP"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/23/26 00:37:31",
+ "timestampMillis": "2298525381",
+ "status": {
+  "cmdId": "bdec9c99-37f2-46ae-832f-0be8d5bc7050",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "02/23/26 00:37:34",
+ "timestampMillis": "2298528375",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "mmult_hw",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D12_Tiled_AP\\mmult_baseline.cpp",
+     "C:/GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D12_Tiled_AP\\mmult_baseline.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "02/23/26 00:37:34",
+ "timestampMillis": "2298528376",
+ "buildStep": {
+  "cmdId": "d6d840f6-779d-4299-9ca4-dc41fee5ba30",
+  "name": "csynth_design",
+  "logFile": "C:/GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D12_Tiled_AP\\matmul_D12_Tiled_AP\\hls\\hls.log",
+  "commandLine": "csynth_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D12_Tiled_AP"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/23/26 00:37:34",
+ "timestampMillis": "2298528376",
+ "status": {
+  "cmdId": "d6d840f6-779d-4299-9ca4-dc41fee5ba30",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/23/26 00:37:34",
+ "timestampMillis": "2298528376",
+ "report": {
+  "path": "C:/GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D12_Tiled_AP\\matmul_D12_Tiled_AP\\hls\\hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/23/26 00:37:34",
+ "timestampMillis": "2298528377",
+ "report": {
+  "path": "C:/GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D12_Tiled_AP\\matmul_D12_Tiled_AP\\hls\\syn\\report\\csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/23/26 00:37:34",
+ "timestampMillis": "2298528377",
+ "report": {
+  "path": "C:/GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D12_Tiled_AP\\matmul_D12_Tiled_AP\\hls\\syn\\report\\csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/23/26 00:37:51",
+ "timestampMillis": "2298545434",
+ "report": {
+  "path": "C:/GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D12_Tiled_AP\\matmul_D12_Tiled_AP\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/23/26 00:37:51",
+ "timestampMillis": "2298545435",
+ "report": {
+  "path": "C:/GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D12_Tiled_AP\\matmul_D12_Tiled_AP\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/23/26 00:37:51",
+ "timestampMillis": "2298545436",
+ "report": {
+  "path": "C:/GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D12_Tiled_AP\\matmul_D12_Tiled_AP\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/23/26 00:37:51",
+ "timestampMillis": "2298545436",
+ "status": {
+  "cmdId": "d6d840f6-779d-4299-9ca4-dc41fee5ba30",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/23/26 00:37:51",
+ "timestampMillis": "2298545603",
+ "status": {
+  "cmdId": "bdec9c99-37f2-46ae-832f-0be8d5bc7050",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/23/26 00:37:51",
+ "timestampMillis": "2298545643",
+ "report": {
+  "path": "C:/GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D12_Tiled_AP\\matmul_D12_Tiled_AP\\reports\\v++_compile_matmul_D12_Tiled_AP_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/23/26 00:37:51",
+ "timestampMillis": "2298545644",
+ "report": {
+  "path": "C:/GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D12_Tiled_AP\\matmul_D12_Tiled_AP\\reports\\.db\\v++_compile_matmul_D12_Tiled_AP_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

@@ -1,0 +1,93 @@
+{
+    "0": {
+        "name": "mmult_hw",
+        "file": "mmult_baseline.cpp",
+        "fileloc": "7",
+        "instructions": "10057",
+        "total_instructions": "10309",
+        "calls": "2 1 4 3",
+        "basicblocks": "10",
+        "loads": {
+            "L": "769"
+        },
+        "stores": {
+            "L": "258"
+        },
+        "loops": {
+            "L": "1",
+            "N": "2"
+        }
+    },
+    "1": {
+        "name": "mmult_hw_Pipeline_load_a_VITIS_LOOP_27_1",
+        "file": "mmult_baseline.cpp",
+        "fileloc": "26",
+        "instructions": "69",
+        "total_instructions": "69",
+        "calls": "",
+        "basicblocks": "11",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "10"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "mmult_hw_Pipeline_init_i_init_j",
+        "file": "mmult_baseline.cpp",
+        "fileloc": "21",
+        "instructions": "44",
+        "total_instructions": "44",
+        "calls": "",
+        "basicblocks": "9",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "10"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "mmult_hw_Pipeline_store_i_store_j",
+        "file": "mmult_baseline.cpp",
+        "fileloc": "44",
+        "instructions": "69",
+        "total_instructions": "69",
+        "calls": "",
+        "basicblocks": "8",
+        "loads": {
+            "L": "7"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "mmult_hw_Pipeline_load_b_VITIS_LOOP_30_2",
+        "file": "mmult_baseline.cpp",
+        "fileloc": "29",
+        "instructions": "70",
+        "total_instructions": "70",
+        "calls": "",
+        "basicblocks": "11",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "10"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

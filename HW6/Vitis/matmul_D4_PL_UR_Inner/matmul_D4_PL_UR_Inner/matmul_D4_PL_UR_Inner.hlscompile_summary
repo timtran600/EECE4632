@@ -1,0 +1,246 @@
+<ENTRY>
+{
+ "thisFile": "C:/GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D4_PL_UR_Inner\\matmul_D4_PL_UR_Inner\\matmul_D4_PL_UR_Inner.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "02/18/26 15:50:25",
+ "timestampMillis": "1921299715",
+ "buildStep": {
+  "cmdId": "5f78e871-5b2d-4144-9a4e-aa4fc30b022f",
+  "name": "v++",
+  "logFile": "C:/GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D4_PL_UR_Inner\\matmul_D4_PL_UR_Inner\\logs\\matmul_D4_PL_UR_Inner.steps.log",
+  "commandLine": "C:/Xilinx/Vitis/2024.1/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config C:\\GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D4_PL_UR_Inner\\matmul.cfg --work_dir matmul_D4_PL_UR_Inner ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "C:\\GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D4_PL_UR_Inner\\matmul.cfg",
+   "--work_dir",
+   "matmul_D4_PL_UR_Inner"
+  ],
+  "iniFiles": [
+   {
+    "path": "C:/GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D4_PL_UR_Inner\\matmul.cfg",
+    "content": "part=xczu3eg-sbva484-1-e\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\nsyn.file=mmult_baseline.cpp\nsyn.file=mmult_baseline.h\ntb.file=mmult_tb.cpp\nsyn.top=mmult_hw"
+   }
+  ],
+  "cwd": "C:\\GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D4_PL_UR_Inner"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/18/26 15:50:25",
+ "timestampMillis": "1921299715",
+ "status": {
+  "cmdId": "5f78e871-5b2d-4144-9a4e-aa4fc30b022f",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "02/18/26 15:50:29",
+ "timestampMillis": "1921303338",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "mmult_hw",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D4_PL_UR_Inner\\mmult_baseline.cpp",
+     "C:/GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D4_PL_UR_Inner\\mmult_baseline.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "02/18/26 15:50:29",
+ "timestampMillis": "1921303339",
+ "buildStep": {
+  "cmdId": "5efa6301-b3e8-4912-8794-05c43d3cfab4",
+  "name": "csynth_design",
+  "logFile": "C:/GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D4_PL_UR_Inner\\matmul_D4_PL_UR_Inner\\hls\\hls.log",
+  "commandLine": "csynth_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D4_PL_UR_Inner"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/18/26 15:50:29",
+ "timestampMillis": "1921303339",
+ "status": {
+  "cmdId": "5efa6301-b3e8-4912-8794-05c43d3cfab4",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/18/26 15:50:29",
+ "timestampMillis": "1921303339",
+ "report": {
+  "path": "C:/GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D4_PL_UR_Inner\\matmul_D4_PL_UR_Inner\\hls\\hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/18/26 15:50:29",
+ "timestampMillis": "1921303340",
+ "report": {
+  "path": "C:/GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D4_PL_UR_Inner\\matmul_D4_PL_UR_Inner\\hls\\syn\\report\\csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/18/26 15:50:29",
+ "timestampMillis": "1921303340",
+ "report": {
+  "path": "C:/GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D4_PL_UR_Inner\\matmul_D4_PL_UR_Inner\\hls\\syn\\report\\csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/18/26 15:50:42",
+ "timestampMillis": "1921316826",
+ "report": {
+  "path": "C:/GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D4_PL_UR_Inner\\matmul_D4_PL_UR_Inner\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/18/26 15:50:42",
+ "timestampMillis": "1921316827",
+ "report": {
+  "path": "C:/GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D4_PL_UR_Inner\\matmul_D4_PL_UR_Inner\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/18/26 15:50:42",
+ "timestampMillis": "1921316828",
+ "report": {
+  "path": "C:/GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D4_PL_UR_Inner\\matmul_D4_PL_UR_Inner\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/18/26 15:50:42",
+ "timestampMillis": "1921316829",
+ "status": {
+  "cmdId": "5efa6301-b3e8-4912-8794-05c43d3cfab4",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/18/26 15:50:42",
+ "timestampMillis": "1921316978",
+ "status": {
+  "cmdId": "5f78e871-5b2d-4144-9a4e-aa4fc30b022f",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/18/26 15:50:42",
+ "timestampMillis": "1921316997",
+ "report": {
+  "path": "C:/GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D4_PL_UR_Inner\\matmul_D4_PL_UR_Inner\\reports\\v++_compile_matmul_D4_PL_UR_Inner_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/18/26 15:50:42",
+ "timestampMillis": "1921316998",
+ "report": {
+  "path": "C:/GitRepos\\EECE4632\\HW6\\Vitis\\matmul_D4_PL_UR_Inner\\matmul_D4_PL_UR_Inner\\reports\\.db\\v++_compile_matmul_D4_PL_UR_Inner_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

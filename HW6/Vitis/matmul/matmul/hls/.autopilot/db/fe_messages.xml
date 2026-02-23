@@ -1,0 +1,36 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="mmult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=mmult_hw" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mmult_baseline.cpp:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mmult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi depth=16384 port=in1" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mmult_baseline.cpp:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mmult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi depth=16384 port=in2" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mmult_baseline.cpp:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mmult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi depth=16384 port=out" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mmult_baseline.cpp:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mmult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=dim bundle=CTRL" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mmult_baseline.cpp:13:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mmult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=CTRL" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mmult_baseline.cpp:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mmult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=128 max=128 avg=128" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mmult_baseline.cpp:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mmult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=128 max=128 avg=128" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="mmult_baseline.cpp:20:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mmult_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=128 max=128 avg=128" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-437" msg_severity="INFO" msg_loc="mmult_baseline.cpp:17:8" msg_body="Automatically disabling loop flattening for loop 'loop2'.">
+        <args LoopName="loop2"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="mmult_baseline.cpp:17:8" msg_body="loop_flatten 0 1 mmult_hw mmult_baseline.cpp:17:8loop2 mmult_baseline.cpp:17:8">
+        <args LoopLoc="mmult_baseline.cpp:17:8" LoopLoc-DebugLoc="File mmult_baseline.cpp Line 17 Column 8" LoopName="loop2" PragmaFunction="mmult_hw" PragmaIsAuto="1" PragmaOptions="0" PragmaSrcLoc="mmult_baseline.cpp:17:8" PragmaSrcLoc-DebugLoc="File mmult_baseline.cpp Line 17 Column 8" PragmaType="loop_flatten"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

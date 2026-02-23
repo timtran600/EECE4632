@@ -1,0 +1,39 @@
+{
+    "0": {
+        "name": "mmult_hw",
+        "file": "mmult_baseline.cpp",
+        "fileloc": "7",
+        "instructions": "76",
+        "total_instructions": "125",
+        "calls": "1",
+        "basicblocks": "7",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1",
+            "N": "1"
+        }
+    },
+    "1": {
+        "name": "mmult_hw_Pipeline_loop3",
+        "file": "mmult_baseline.cpp",
+        "fileloc": "19",
+        "instructions": "49",
+        "total_instructions": "49",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

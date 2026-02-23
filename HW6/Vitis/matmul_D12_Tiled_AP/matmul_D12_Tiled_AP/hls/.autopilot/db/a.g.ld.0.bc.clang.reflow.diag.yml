@@ -1,0 +1,493 @@
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: mmult_baseline.cpp, Line: 15, Column: 6 }
+Function:        _Z8mmult_hwPiS_S_i
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tA
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '4'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: mmult_baseline.cpp, Line: 15, Column: 18 }
+Function:        _Z8mmult_hwPiS_S_i
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tB
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '4'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: mmult_baseline.cpp, Line: 15, Column: 30 }
+Function:        _Z8mmult_hwPiS_S_i
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          tC
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '4'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: mmult_baseline.cpp, Line: 27, Column: 34 }
+Function:        _Z8mmult_hwPiS_S_i
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgepseq
+  - ArrayName:       in1
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_27_1
+  - String:          ' '
+  - LoopLoc:         'mmult_baseline.cpp:27:34'
+  - String:          ' '
+  - Function:        'mmult_hw(int*, int*, int*, int)'
+    DebugLoc:        { File: mmult_baseline.cpp, Line: 8, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: mmult_baseline.cpp, Line: 28, Column: 32 }
+  - OrigDirection:   read
+  - OrigID:          for.inc41.load.12
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: mmult_baseline.cpp, Line: 30, Column: 34 }
+Function:        _Z8mmult_hwPiS_S_i
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep16seq
+  - ArrayName:       in2
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_30_2
+  - String:          ' '
+  - LoopLoc:         'mmult_baseline.cpp:30:34'
+  - String:          ' '
+  - Function:        'mmult_hw(int*, int*, int*, int)'
+    DebugLoc:        { File: mmult_baseline.cpp, Line: 8, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: mmult_baseline.cpp, Line: 31, Column: 32 }
+  - OrigDirection:   read
+  - OrigID:          for.inc69.load.10
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: mmult_baseline.cpp, Line: 43, Column: 22 }
+Function:        _Z8mmult_hwPiS_S_i
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep17seq
+  - ArrayName:       out
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        store_j
+  - String:          ' '
+  - LoopLoc:         'mmult_baseline.cpp:43:22'
+  - String:          ' '
+  - Function:        'mmult_hw(int*, int*, int*, int)'
+    DebugLoc:        { File: mmult_baseline.cpp, Line: 8, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: mmult_baseline.cpp, Line: 44, Column: 50 }
+  - OrigDirection:   write
+  - OrigID:          for.inc139.store.17
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: mmult_baseline.cpp, Line: 27, Column: 34 }
+Function:        _Z8mmult_hwPiS_S_i
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: mmult_baseline.cpp, Line: 27, Column: 34 }
+  - OrigDirection:   read
+  - OrigID:          scevgepseq
+  - ArrayName:       in1
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_a
+  - String:          ' '
+  - LoopLoc:         'mmult_baseline.cpp:26:21'
+  - String:          ' '
+  - Function:        'mmult_hw(int*, int*, int*, int)'
+    DebugLoc:        { File: mmult_baseline.cpp, Line: 8, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: mmult_baseline.cpp, Line: 30, Column: 34 }
+Function:        _Z8mmult_hwPiS_S_i
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: mmult_baseline.cpp, Line: 30, Column: 34 }
+  - OrigDirection:   read
+  - OrigID:          scevgep16seq
+  - ArrayName:       in2
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        load_b
+  - String:          ' '
+  - LoopLoc:         'mmult_baseline.cpp:29:21'
+  - String:          ' '
+  - Function:        'mmult_hw(int*, int*, int*, int)'
+    DebugLoc:        { File: mmult_baseline.cpp, Line: 8, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: mmult_baseline.cpp, Line: 43, Column: 22 }
+Function:        _Z8mmult_hwPiS_S_i
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: mmult_baseline.cpp, Line: 43, Column: 22 }
+  - OrigDirection:   write
+  - OrigID:          scevgep17seq
+  - ArrayName:       out
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        store_i
+  - String:          ' '
+  - LoopLoc:         'mmult_baseline.cpp:42:18'
+  - String:          ' '
+  - Function:        'mmult_hw(int*, int*, int*, int)'
+    DebugLoc:        { File: mmult_baseline.cpp, Line: 8, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: mmult_baseline.cpp, Line: 43, Column: 22 }
+Function:        _Z8mmult_hwPiS_S_i
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: mmult_baseline.cpp, Line: 43, Column: 22 }
+  - OrigDirection:   write
+  - OrigID:          scevgep17seq
+  - ArrayName:       out
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        store_j
+  - String:          ' '
+  - LoopLoc:         'mmult_baseline.cpp:43:22'
+  - String:          ' '
+  - Function:        'mmult_hw(int*, int*, int*, int)'
+    DebugLoc:        { File: mmult_baseline.cpp, Line: 8, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: mmult_baseline.cpp, Line: 30, Column: 34 }
+Function:        _Z8mmult_hwPiS_S_i
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: mmult_baseline.cpp, Line: 30, Column: 34 }
+  - OrigDirection:   read
+  - OrigID:          scevgep16seq
+  - ArrayName:       in2
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_30_2
+  - String:          ' '
+  - LoopLoc:         'mmult_baseline.cpp:30:34'
+  - String:          ' '
+  - Function:        'mmult_hw(int*, int*, int*, int)'
+    DebugLoc:        { File: mmult_baseline.cpp, Line: 8, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: mmult_baseline.cpp, Line: 27, Column: 34 }
+Function:        _Z8mmult_hwPiS_S_i
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: mmult_baseline.cpp, Line: 27, Column: 34 }
+  - OrigDirection:   read
+  - OrigID:          scevgepseq
+  - ArrayName:       in1
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_27_1
+  - String:          ' '
+  - LoopLoc:         'mmult_baseline.cpp:27:34'
+  - String:          ' '
+  - Function:        'mmult_hw(int*, int*, int*, int)'
+    DebugLoc:        { File: mmult_baseline.cpp, Line: 8, Column: 0 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        store_j
+  - String:          '> at '
+  - LoopLoc:         'mmult_baseline.cpp:43:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_30_2
+  - String:          '> at '
+  - LoopLoc:         'mmult_baseline.cpp:30:34'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_27_1
+  - String:          '> at '
+  - LoopLoc:         'mmult_baseline.cpp:27:34'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        init_j
+  - String:          '> at '
+  - LoopLoc:         'mmult_baseline.cpp:22:21'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: mmult_baseline.cpp, Line: 27, Column: 34 }
+Function:        _Z8mmult_hwPiS_S_i
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_27_1
+  - String:          ' '
+  - LoopLoc:         'mmult_baseline.cpp:27:34'
+  - String:          ' '
+  - Function:        'mmult_hw(int*, int*, int*, int)'
+    DebugLoc:        { File: mmult_baseline.cpp, Line: 8, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: mmult_baseline.cpp, Line: 27, Column: 34 }
+Function:        _Z8mmult_hwPiS_S_i
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_27_1
+  - String:          '''('
+  - LoopLoc:         'mmult_baseline.cpp:27:34'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: mmult_baseline.cpp, Line: 30, Column: 34 }
+Function:        _Z8mmult_hwPiS_S_i
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_30_2
+  - String:          ' '
+  - LoopLoc:         'mmult_baseline.cpp:30:34'
+  - String:          ' '
+  - Function:        'mmult_hw(int*, int*, int*, int)'
+    DebugLoc:        { File: mmult_baseline.cpp, Line: 8, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: mmult_baseline.cpp, Line: 30, Column: 34 }
+Function:        _Z8mmult_hwPiS_S_i
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_30_2
+  - String:          '''('
+  - LoopLoc:         'mmult_baseline.cpp:30:34'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: mmult_baseline.cpp, Line: 43, Column: 22 }
+Function:        _Z8mmult_hwPiS_S_i
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq2
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        store_j
+  - String:          ' '
+  - LoopLoc:         'mmult_baseline.cpp:43:22'
+  - String:          ' '
+  - Function:        'mmult_hw(int*, int*, int*, int)'
+    DebugLoc:        { File: mmult_baseline.cpp, Line: 8, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: mmult_baseline.cpp, Line: 43, Column: 22 }
+Function:        _Z8mmult_hwPiS_S_i
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        store_j
+  - String:          '''('
+  - LoopLoc:         'mmult_baseline.cpp:43:22'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...

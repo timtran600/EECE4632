@@ -1,0 +1,21 @@
+{
+    "0": {
+        "name": "mmult_hw",
+        "file": "mmult_baseline.cpp",
+        "fileloc": "7",
+        "instructions": "93",
+        "total_instructions": "93",
+        "calls": "",
+        "basicblocks": "7",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1",
+            "N": "1"
+        }
+    }
+}

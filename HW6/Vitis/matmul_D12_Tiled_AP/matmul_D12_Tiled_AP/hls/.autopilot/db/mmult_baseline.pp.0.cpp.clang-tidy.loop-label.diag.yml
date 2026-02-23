@@ -1,0 +1,22 @@
+---
+MainSourceFile:  'C:/GitRepos/EECE4632/HW6/Vitis/matmul_D12_Tiled_AP/matmul_D12_Tiled_AP/hls/.autopilot/db/mmult_baseline.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_27_1:  '
+    FileOffset:      27
+    FilePath:        mmult_baseline.cpp
+    Replacements:    
+      - FilePath:        'C:\GitRepos\EECE4632\HW6\Vitis\matmul_D12_Tiled_AP\matmul_D12_Tiled_AP\hls\.autopilot\db\mmult_baseline.pp.0.cpp'
+        Offset:          10705
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_27_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_30_2:  '
+    FileOffset:      30
+    FilePath:        mmult_baseline.cpp
+    Replacements:    
+      - FilePath:        'C:\GitRepos\EECE4632\HW6\Vitis\matmul_D12_Tiled_AP\matmul_D12_Tiled_AP\hls\.autopilot\db\mmult_baseline.pp.0.cpp'
+        Offset:          10864
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_30_2: '
+...

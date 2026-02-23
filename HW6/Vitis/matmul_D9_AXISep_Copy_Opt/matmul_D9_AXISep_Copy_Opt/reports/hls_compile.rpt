@@ -1,0 +1,206 @@
+
+
+================================================================
+== Synthesis Summary Report of 'mmult_hw'
+================================================================
++ General Information: 
+    * Date:           Sat Feb 21 23:06:32 2026
+    * Version:        2024.1 (Build 5069499 on May 21 2024)
+    * Project:        matmul_D9_AXISep_Copy_Opt
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xczu3eg-sbva484-1-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +---------------------------------+------+------+---------+-----------+----------+---------+------+----------+--------+---------+-----------+-----------+-----+
+    |             Modules             | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |        |         |           |           |     |
+    |             & Loops             | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|  BRAM  |   DSP   |     FF    |    LUT    | URAM|
+    +---------------------------------+------+------+---------+-----------+----------+---------+------+----------+--------+---------+-----------+-----------+-----+
+    |+ mmult_hw                       |     -|  0.00|  4506383|  4.506e+07|         -|  4506384|     -|        no|  8 (1%)|   7 (1%)|  3012 (2%)|  3490 (4%)|    -|
+    | o loop1                         |     -|  7.30|  4506368|  4.506e+07|     35206|        -|   128|        no|       -|        -|          -|          -|    -|
+    |  + mmult_hw_Pipeline_load_row   |     -|  0.00|      131|  1.310e+03|         -|      131|     -|        no|       -|        -|   61 (~0%)|  103 (~0%)|    -|
+    |   o load_row                    |     -|  7.30|      129|  1.290e+03|         3|        1|   128|       yes|       -|        -|          -|          -|    -|
+    |  o loop2                        |     -|  7.30|    35072|  3.507e+05|       274|        -|   128|        no|       -|        -|          -|          -|    -|
+    |   + mmult_hw_Pipeline_load_col  |     -|  0.00|      139|  1.390e+03|         -|      139|     -|        no|       -|        -|  213 (~0%)|  279 (~0%)|    -|
+    |    o load_col                   |     -|  7.30|      137|  1.370e+03|        11|        1|   128|       yes|       -|        -|          -|          -|    -|
+    |   + mmult_hw_Pipeline_loop3     |     -|  0.38|      130|  1.300e+03|         -|      130|     -|        no|       -|  3 (~0%)|   43 (~0%)|  160 (~0%)|    -|
+    |    o loop3                      |     -|  7.30|      128|  1.280e+03|         2|        1|   128|       yes|       -|        -|          -|          -|    -|
+    +---------------------------------+------+------+---------+-----------+----------+---------+------+----------+--------+---------+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* M_AXI
++-------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| Interface   | Read/Write | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   | Resource Estimate |
+|             |            | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |                   |
++-------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| m_axi_gmem0 | READ_ONLY  | 32 -> 32   | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          | BRAM=2            |
+| m_axi_gmem1 | READ_ONLY  | 32 -> 32   | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          | BRAM=2            |
+| m_axi_gmem2 | WRITE_ONLY | 32 -> 32   | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          | BRAM=2            |
++-------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+
+* S_AXILITE Interfaces
++------------+------------+---------------+--------+----------+
+| Interface  | Data Width | Address Width | Offset | Register |
++------------+------------+---------------+--------+----------+
+| s_axi_CTRL | 32         | 6             | 16     | 0        |
++------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface  | Register | Offset | Width | Access | Description                      | Bit Fields                                                           |
++------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_CTRL | CTRL     | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_CTRL | GIER     | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_CTRL | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_CTRL | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_CTRL | in1_1    | 0x10   | 32    | W      | Data signal of in1               |                                                                      |
+| s_axi_CTRL | in1_2    | 0x14   | 32    | W      | Data signal of in1               |                                                                      |
+| s_axi_CTRL | in2_1    | 0x1c   | 32    | W      | Data signal of in2               |                                                                      |
+| s_axi_CTRL | in2_2    | 0x20   | 32    | W      | Data signal of in2               |                                                                      |
+| s_axi_CTRL | out_r_1  | 0x28   | 32    | W      | Data signal of out_r             |                                                                      |
+| s_axi_CTRL | out_r_2  | 0x2c   | 32    | W      | Data signal of out_r             |                                                                      |
+| s_axi_CTRL | dim      | 0x34   | 32    | W      | Data signal of dim               |                                                                      |
++------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+----------+
+| Argument | Direction | Datatype |
++----------+-----------+----------+
+| in1      | in        | int*     |
+| in2      | in        | int*     |
+| out      | out       | int*     |
+| dim      | in        | int      |
++----------+-----------+----------+
+
+* SW-to-HW Mapping
++----------+--------------+-----------+----------+-----------------------------------+
+| Argument | HW Interface | HW Type   | HW Usage | HW Info                           |
++----------+--------------+-----------+----------+-----------------------------------+
+| in1      | m_axi_gmem0  | interface |          | channel=0                         |
+| in1      | s_axi_CTRL   | register  | offset   | name=in1_1 offset=0x10 range=32   |
+| in1      | s_axi_CTRL   | register  | offset   | name=in1_2 offset=0x14 range=32   |
+| in2      | m_axi_gmem1  | interface |          | channel=0                         |
+| in2      | s_axi_CTRL   | register  | offset   | name=in2_1 offset=0x1c range=32   |
+| in2      | s_axi_CTRL   | register  | offset   | name=in2_2 offset=0x20 range=32   |
+| out      | m_axi_gmem2  | interface |          | channel=0                         |
+| out      | s_axi_CTRL   | register  | offset   | name=out_r_1 offset=0x28 range=32 |
+| out      | s_axi_CTRL   | register  | offset   | name=out_r_2 offset=0x2c range=32 |
+| dim      | s_axi_CTRL   | register  |          | name=dim offset=0x34 range=32     |
++----------+--------------+-----------+----------+-----------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+* Inferred Burst Summary
++--------------+-----------+----------+-------+
+| HW Interface | Direction | Length   | Width |
++--------------+-----------+----------+-------+
+| m_axi_gmem0  | read      | variable | 32    |
+| m_axi_gmem2  | write     | variable | 32    |
++--------------+-----------+----------+-------+
+
+* All M_AXI Variable Accesses
++--------------+----------+--------------------------+-----------+--------------+----------+----------+--------------------------+------------+-------------------------------------------------------------------------------------------------------+
+| HW Interface | Variable | Access Location          | Direction | Burst Status | Length   | Loop     | Loop Location            | Resolution | Problem                                                                                               |
++--------------+----------+--------------------------+-----------+--------------+----------+----------+--------------------------+------------+-------------------------------------------------------------------------------------------------------+
+| m_axi_gmem0  | in1      | mmult_baseline.cpp:24:12 | read      | Widen Fail   |          | load_row | mmult_baseline.cpp:22:12 | 214-353    | Could not widen since type i32 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem0  | in1      | mmult_baseline.cpp:24:12 | read      | Inferred     | variable | loop1    | mmult_baseline.cpp:19:12 |            |                                                                                                       |
+| m_axi_gmem1  | in2      | mmult_baseline.cpp:31:12 | read      | Fail         |          | load_col | mmult_baseline.cpp:29:12 | 214-230    | Stride is incompatible                                                                                |
+| m_axi_gmem2  | out      | mmult_baseline.cpp:39:26 | write     | Widen Fail   |          | loop2    | mmult_baseline.cpp:26:16 | 214-353    | Could not widen since type i32 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem2  | out      | mmult_baseline.cpp:39:26 | write     | Inferred     | variable | loop1    | mmult_baseline.cpp:19:12 |            |                                                                                                       |
++--------------+----------+--------------------------+-----------+--------------+----------+----------+--------------------------+------------+-------------------------------------------------------------------------------------------------------+
+
+    * Resolution URL: docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=XXX-YYY.html (replace XXX-YYY with column value)
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------------+-----+--------+-------------+--------+----------+---------+
+| Name                          | DSP | Pragma | Variable    | Op     | Impl     | Latency |
++-------------------------------+-----+--------+-------------+--------+----------+---------+
+| + mmult_hw                    | 7   |        |             |        |          |         |
+|   icmp_ln19_fu_216_p2         |     |        | icmp_ln19   | setgt  | auto     | 0       |
+|   mul_32ns_32ns_62_1_1_U17    | 4   |        | mul_ln19    | mul    | auto     | 0       |
+|   empty_fu_266_p3             |     |        | empty       | select | auto_sel | 0       |
+|   icmp_ln19_1_fu_295_p2       |     |        | icmp_ln19_1 | setlt  | auto     | 0       |
+|   add_ln19_fu_300_p2          |     |        | add_ln19    | add    | fabric   | 0       |
+|   icmp_ln26_fu_310_p2         |     |        | icmp_ln26   | seteq  | auto     | 0       |
+|   add_ln26_fu_315_p2          |     |        | add_ln26    | add    | fabric   | 0       |
+|  + mmult_hw_Pipeline_load_row | 0   |        |             |        |          |         |
+|    icmp_ln22_fu_102_p2        |     |        | icmp_ln22   | seteq  | auto     | 0       |
+|    add_ln22_fu_108_p2         |     |        | add_ln22    | add    | fabric   | 0       |
+|  + mmult_hw_Pipeline_load_col | 0   |        |             |        |          |         |
+|    icmp_ln29_fu_154_p2        |     |        | icmp_ln29   | seteq  | auto     | 0       |
+|    add_ln29_fu_160_p2         |     |        | add_ln29    | add    | fabric   | 0       |
+|    add_ln31_2_fu_169_p2       |     |        | add_ln31_2  | add    | fabric   | 0       |
+|    add_ln31_fu_175_p2         |     |        | add_ln31    | add    | fabric   | 0       |
+|    add_ln31_1_fu_193_p2       |     |        | add_ln31_1  | add    | fabric   | 0       |
+|  + mmult_hw_Pipeline_loop3    | 3   |        |             |        |          |         |
+|    icmp_ln34_fu_104_p2        |     |        | icmp_ln34   | seteq  | auto     | 0       |
+|    add_ln34_fu_110_p2         |     |        | add_ln34    | add    | fabric   | 0       |
+|    mul_32s_32s_32_1_1_U11     | 3   |        | mul_ln37    | mul    | auto     | 0       |
+|    sum_1_fu_130_p2            |     |        | sum_1       | add    | fabric   | 0       |
++-------------------------------+-----+--------+-------------+--------+----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++-----------------+--------------+-----------+------+------+--------+----------+------+---------+------------------+
+| Name            | Usage        | Type      | BRAM | URAM | Pragma | Variable | Impl | Latency | Bitwidth, Depth, |
+|                 |              |           |      |      |        |          |      |         | Banks            |
++-----------------+--------------+-----------+------+------+--------+----------+------+---------+------------------+
+| + mmult_hw      |              |           | 8    | 0    |        |          |      |         |                  |
+|   CTRL_s_axi_U  | interface    | s_axilite |      |      |        |          |      |         |                  |
+|   gmem0_m_axi_U | interface    | m_axi     | 2    |      |        |          |      |         |                  |
+|   gmem1_m_axi_U | interface    | m_axi     | 2    |      |        |          |      |         |                  |
+|   gmem2_m_axi_U | interface    | m_axi     | 2    |      |        |          |      |         |                  |
+|   rowA_U        | ram_1p array |           | 2    |      |        | rowA     | auto | 1       | 32, 128, 1       |
+|   colB_U        | ram_1p array |           | 2    |      |        | colB     | auto | 1       | 32, 128, 1       |
++-----------------+--------------+-----------+------+------+--------+----------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++----------------+-----------------------------------------+-------------------------------------------+
+| Type           | Options                                 | Location                                  |
++----------------+-----------------------------------------+-------------------------------------------+
+| interface      | m_axi depth=16384 port=in1 bundle=gmem0 | mmult_baseline.cpp:10 in mmult_hw, in1    |
+| interface      | m_axi depth=16384 port=in2 bundle=gmem1 | mmult_baseline.cpp:11 in mmult_hw, in2    |
+| interface      | m_axi depth=16384 port=out bundle=gmem2 | mmult_baseline.cpp:12 in mmult_hw, out    |
+| interface      | s_axilite port=dim bundle=CTRL          | mmult_baseline.cpp:13 in mmult_hw, dim    |
+| interface      | s_axilite port=return bundle=CTRL       | mmult_baseline.cpp:14 in mmult_hw, return |
+| loop_tripcount | min=128 max=128 avg=128                 | mmult_baseline.cpp:20 in mmult_hw         |
+| loop_tripcount | min=128 max=128 avg=128                 | mmult_baseline.cpp:23 in mmult_hw         |
+| loop_tripcount | min=128 max=128 avg=128                 | mmult_baseline.cpp:27 in mmult_hw         |
+| loop_tripcount | min=128 max=128 avg=128                 | mmult_baseline.cpp:30 in mmult_hw         |
+| loop_tripcount | min=128 max=128 avg=128                 | mmult_baseline.cpp:35 in mmult_hw         |
+| pipeline       | II=1                                    | mmult_baseline.cpp:36 in mmult_hw         |
++----------------+-----------------------------------------+-------------------------------------------+
+
+
