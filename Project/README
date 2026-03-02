@@ -1,0 +1,14 @@
+# Instructions to Run Jupyter Notebook
+# Navigate to project directory
+cd /path to project forlder/
+
+# Activate venv
+source bnn_env/Scripts/activate
+
+# Verify python versioin (3.10)
+python --version 
+pip list
+
+# Open local jupyter notebook via terminal
+jupyter notebook
+
