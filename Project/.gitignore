@@ -1,3 +1,23 @@
+# Python environments - never commit these
 bnn_env/
+venv/
+env/
+.venv/
+
+# Python cache
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# HLS/Vivado build artifacts (large)
+*.bit
+*.hwh
+# Keep .bit and .hwh only if they are final deliverables
+
+# Large model checkpoints (optional, use Git LFS if needed)
+*.pt
+*.pth
