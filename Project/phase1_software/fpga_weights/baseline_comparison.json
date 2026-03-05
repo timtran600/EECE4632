@@ -11,11 +11,5 @@
     "accuracy": 98.5,
     "gops": 2.23,
     "speedup_vs_cpu": 0.88
-  },
-  "fpga_target": {
-    "latency_ms_10x": 0.0106,
-    "latency_ms_50x": 0.0021,
-    "throughput_10x": 94348.6,
-    "throughput_50x": 471743.0
   }
 }
