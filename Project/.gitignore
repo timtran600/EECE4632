@@ -20,4 +20,11 @@ __pycache__/
 
 # Large model checkpoints (optional, use Git LFS if needed)
 *.pt
+*.pthbnn_env/
+__pycache__/
+*.pyc
+*.pt
 *.pth
+Project/bnn_env/
+bnn_env/
+bnn_env/
